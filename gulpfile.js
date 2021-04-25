@@ -128,7 +128,7 @@ function watchFiles() {
 function browserSync(done) {
 	browsersync.init({
 		server: {
-			baseDir: './build',
+			baseDir: './docs',
 		},
 		open: true,
 	});
