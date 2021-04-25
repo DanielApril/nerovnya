@@ -20,8 +20,8 @@ const plumber = require('gulp-plumber');
 // Paths
 const paths = {
 	dev: './src/',
-	dest: './build/assets/',
-	build: 'build/**/*',
+	dest: './docs/assets/',
+	build: 'docs/**/*',
 };
 
 const srcPaths = {
@@ -41,7 +41,7 @@ const buildPaths = {
 	build: `${paths.dest}**/*`,
 	js: `${paths.dest}js/`,
 	css: `${paths.dest}css/`,
-	pug: './build/',
+	pug: './docs/',
 	img: `${paths.dest}img`,
 	fonts: `${paths.dest}css/fonts`,
 };
