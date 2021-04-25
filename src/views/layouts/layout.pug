@@ -1,0 +1,27 @@
+//- Variables
+block vars
+	- var classPage = ""
+	- var titlePage = ""
+	- var descPage = ""
+
+doctype
+html(lang="ru")
+	//- Head
+	include ../includes/head
+
+	body(class=classPage)
+
+		//- Header
+		include ../includes/header
+
+		//- Menu
+		include ../includes/menu
+
+		//- Content
+		main
+			block content
+
+		//- Footer
+		include ../includes/footer
+
+		script(async src="assets/js/main.js")

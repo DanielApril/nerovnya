@@ -1,0 +1,13 @@
+:root {
+	--cl-white: #FFFFFF;
+	--cl-salad-md: #80D0C7;
+	--cl-salad-light: #D1FBF6;
+	--cl-aqua-md: #13547A;
+	--cl-aqua-light: #3490C6;
+	--cl-black: #242424;
+
+	--cl-text: var(--cl-aqua-md);
+	--cl-text-contrast: var(--cl-salad-light);
+
+	--media-reakpoint: 760px;
+}
