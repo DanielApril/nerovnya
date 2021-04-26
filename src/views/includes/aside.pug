@@ -1,0 +1,27 @@
+aside
+	.aside__top
+		a.aside__logo(href="#")
+			include ../../img/logo.svg
+
+		button.button.menu-close-button(onclick="closeMenu()")
+			.icon
+				include ../../img/icons/cross.svg
+
+	nav.aside__menu
+		ul
+			li
+				a(href="#") Проекты
+			li
+				a(href="#") О нас
+			li
+				a(href="#") Как работаем
+			li
+				a(href="#") Контакты
+
+	.aside__bottom
+		a.aside__inst(href="#")
+			.icon
+				include ../../img/icons/instagram.svg
+		.aside__langs
+			a.aside__lang(href="#")._active En
+			a.aside__lang(href="#") Ru

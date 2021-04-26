@@ -2308,4 +2308,21 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     return C.$ === S && (C.$ = Gt), e && C.jQuery === S && (C.jQuery = Vt), S;
   }, "undefined" == typeof e && (C.jQuery = C.$ = S), S;
 });
-"use strict";
+'use strict';
+
+var $main = $('main');
+var $pageHeader = $('.page-header');
+var $menuOpenBtn = $('.menu-open-button');
+var $asideEl = $('aside');
+
+function openMenu() {
+	$main.addClass('_menu-opened');
+	$pageHeader.addClass('_menu-opened');
+	$asideEl.addClass('_active');
+}
+
+function closeMenu() {
+	$main.removeClass('_menu-opened');
+	$pageHeader.removeClass('_menu-opened');
+	$asideEl.removeClass('_active');
+}

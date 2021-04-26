@@ -9,5 +9,14 @@
 	--cl-text: var(--cl-aqua-md);
 	--cl-text-contrast: var(--cl-salad-light);
 
-	--media-reakpoint: 760px;
+	--cl-bg: var(--cl-white);
+	--cl-bg-contrast: var(--cl-aqua-md);
+
+	--container-width-lg: 1400px;
+	--container-width-md: 1000px;
+	--container-width-sm: 700px;
+
+	--media-reakpoint-lg: 1100px;
+	--media-reakpoint-md: 760px;
+	--media-reakpoint-sm: 500px;
 }

@@ -1,0 +1,32 @@
+.page-header {
+	display: grid;
+	grid-template-columns: 1fr min-content;
+	padding: 12px 20px;
+}
+
+.header__logo {
+	width: auto;
+	height: 32px;
+}
+
+.header__logo svg {
+	fill: var(--cl-text);
+	height: 100%;
+}
+
+.menu-open-button,
+.menu-close-button {
+	width: 32px;
+	height: 32px;
+}
+
+.menu-open-button .icon,
+.menu-close-button .icon {
+	width: 24px;
+	height: 24px;
+}
+
+.menu-open-button svg,
+.menu-close-button svg {
+	fill: var(--cl-aqua-md);
+}
