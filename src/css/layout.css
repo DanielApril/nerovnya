@@ -51,10 +51,10 @@ body {
 
 main,
 .page-header {
-	transition: transform .3s ease-in-out;
+	transition: transform var(--anim-time-md) var(--anim-tf);
 }
 
 main._menu-opened,
 .page-header._menu-opened {
-	transform: translateX(-100%);
+	transform: translateX(-30%);
 }

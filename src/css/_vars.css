@@ -19,4 +19,9 @@
 	--media-reakpoint-lg: 1100px;
 	--media-reakpoint-md: 760px;
 	--media-reakpoint-sm: 500px;
+
+	--anim-time-lg: .8s;
+	--anim-time-md: .5s;
+	--anim-time-sm: .3s;
+	--anim-tf: ease-in-out;
 }

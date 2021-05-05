@@ -8,8 +8,13 @@ aside {
 	grid-template-rows: min-content minmax(min-content, 1fr) min-content;
 	background: var(--cl-bg);
 	transform: translateX(100%);
-	transition: transform .3s ease-in-out;
+	transition: transform var(--anim-time-md) var(--anim-tf);
+	visibility: hidden;
 	z-index: 100;
+}
+
+aside._show {
+	visibility: visible;
 }
 
 aside._active {
@@ -61,4 +66,35 @@ aside._active {
 
 .aside__lang._active {
 	opacity: 1;
+}
+
+.aside__menu {
+	padding: 20px;
+}
+
+.aside__menu ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 100px 100px;
+	justify-items: stretch;
+	align-items: stretch;
+	grid-gap: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+.aside__menu li {
+	list-style-type: none;
+	background-color: var(--cl-bg-contrast);
+	color: var(--cl-text-contrast);
+}
+
+.aside__menu a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	text-transform: uppercase;
 }

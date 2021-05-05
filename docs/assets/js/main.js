@@ -2326,3 +2326,7 @@ function closeMenu() {
 	$pageHeader.removeClass('_menu-opened');
 	$asideEl.removeClass('_active');
 }
+
+$(document).ready(function () {
+	$asideEl.addClass('_show');
+});
