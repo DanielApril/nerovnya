@@ -1,0 +1,12 @@
+.contacts__socials {
+	margin-top: 40px;
+}
+
+.contacts__socials-links {
+	display: flex;
+	gap: 20px
+}
+
+.contact__form {
+	margin-top: 100px;
+}

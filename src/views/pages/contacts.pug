@@ -1,0 +1,27 @@
+extends ../layouts/layout
+
+block vars
+	- var classPage = "page-contscts"
+	- var titlePage = "Александр Неровня"
+	- var descPage = "Архитектор"
+
+block content
+	section.section.first-section._cover
+		.container
+			h1 Let's talk about your ideas!
+			p Please contact our team via email, whatsapp, telegram or&nbsp;on&nbsp;social media, and we&nbsp;will be&nbsp;glad to&nbsp;discuss your idea for an&nbsp;architectural project of&nbsp;any scale, purpose and geographical location.
+
+			.contacts
+				div
+					a(href="tel:+79150991886") +7 (915) 099-18-86
+				div
+					a(href="mailto:alex_nerovnya@mail.ru") alex_nerovnya@mail.ru
+
+				.contacts__socials
+					h3.contacts__socials-desc Visit our socials:
+					.contacts__socials-links
+						include ../includes/elements/instagram
+						include ../includes/elements/behance
+
+				.contact__form
+					include ../includes/components/form

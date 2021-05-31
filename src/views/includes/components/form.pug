@@ -1,0 +1,14 @@
+form.form(action="" name="form")
+	label(for="input-name") Имя
+	input(id="input-name" name="input-name" type="text" placeholder="Иван" required)
+	label(for="input-email") Email
+	input(id="input-email" name="input-email" type="email" placeholder="1@2.ru" required)
+	label(for="input-message") Сообщение
+	textarea(id="input-message" name="input-message" placeholder="Сообщение" required)
+
+	label(for="input-phone") Телефон
+	input(id="input-phone" name="input-phone" type="tel" placeholder="Телефон")
+	label(for="input-file") Файлик
+	input(id="input-file" name="input-file" type="file" placeholder="Файлик")
+
+	button.button(type="submit" id="form-button") Отправить

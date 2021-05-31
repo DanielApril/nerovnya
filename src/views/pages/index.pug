@@ -1,18 +1,17 @@
 extends ../layouts/layout
 
 block vars
-	- var classPage = "index-page"
+	- var classPage = "page-index"
 	- var titlePage = "Александр Неровня"
 	- var descPage = "Архитектор"
 
 block content
-	section
+	section.section.first-section._cover
 		.container
-			h1 Добро пожаловать
-			p Мы&nbsp;&mdash; команда архитекторов и&nbsp;дизайнеров из&nbsp;Москвы.
-			p Основополагающие принципы нашей работы&nbsp;&mdash; честный минимализм, союз с&nbsp;окружающей средой, энергоэффективность и&nbsp;универсальная доступность.
+			h1 Короткий крутой заголовок
+			p Равным образом начало повседневной работы по формированию позиции требуют определения и уточнения новых предложений. Таким образом реализация намеченных плановых заданий позволяет оценить значение форм развития. Не следует, однако забывать, что сложившаяся структура организации в значительной степени обуславливает создание направлений прогрессивного развития.
 
-	section
+	section.section.projects
 		.container
 			h2 Проекты
 			.index-projects.swiper-container
@@ -22,8 +21,7 @@ block content
 				.swiper-button-prev Prev
 				.swiper-button-next Next
 
-
-	section
+	section.section.team
 		.container
 			h2 Команда
 			ul
@@ -31,7 +29,7 @@ block content
 				li Андрей
 				li Сабина
 
-	section
+	section.section.blog
 		.container
 			h2 Блог
 			ul

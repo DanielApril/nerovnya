@@ -1,3 +1,8 @@
 .page-footer {
-	padding-bottom: 40px;
+	margin-left: var(--aside-width);
+	padding: 40px 20px 44px;
+}
+
+.site-copyright {
+	/* font-size: 12px; */
 }

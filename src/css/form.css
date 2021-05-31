@@ -1,0 +1,43 @@
+.form {
+	display: grid;
+	justify-items: start;
+	max-width: 400px;
+}
+
+label + input,
+label + textarea {
+	margin-top: 6px;
+}
+
+label {
+	font-weight: 500;
+}
+
+input + label,
+textarea + label {
+	margin-top: 20px;
+}
+
+textarea {
+	resize: vertical;
+	max-height: 400px;
+	min-height: 80px;
+}
+
+input,
+textarea {
+	padding: 8px 12px;
+	width: 100%;
+	border: 2px solid var(--cl-green);
+	border-radius: 4px;
+	outline: none;
+	transition: all .2s ease;
+}
+
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+	border: 2px solid var(--cl-red-dark);
+	outline: none;
+}

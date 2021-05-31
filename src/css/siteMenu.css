@@ -1,0 +1,30 @@
+.site-menu .inner {
+	display: grid;
+	grid-template-rows: min-content;
+	grid-row-gap: 12px;
+	justify-items: end;
+	padding: 0;
+	margin: 0;
+	text-align: right;
+}
+
+.site-menu .inner li {
+	list-style: none;
+	transition: all var(--anim-time-sm) ease-in-out;
+}
+
+.site-menu .inner li:hover {
+	transform: translateX(8px);
+}
+
+.site-menu .inner li._active a {
+	opacity: 1;
+	font-weight: 600;
+}
+
+.site-menu .inner a {
+	padding: 4px 8px;
+	text-decoration: none;
+	text-transform: lowercase;
+	opacity: .7;
+}

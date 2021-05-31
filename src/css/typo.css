@@ -1,5 +1,16 @@
+html {
+	font-family: 'Montserrat',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';
+	line-height: 1.4;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: inherit;
+	line-height: inherit;
+	font-weight: inherit;
+	font-size: inherit;
 }
 
 h1,
@@ -10,6 +21,7 @@ h5,
 h6 {
 	margin: 2em 0 1em;
 	font-weight: 600;
+	color: var(--cl-text-alt);
 }
 
 h1 {
@@ -36,7 +48,7 @@ h6 {
 	font-size: 16px;
 }
 
-@media (min-width: var(--media-reakpoint)) {
+@media (min-width: var(--media-breakpoint-tablet)) {
 	h1 {
 		font-size: 44px;
 	}
@@ -84,4 +96,8 @@ a {
 b,
 strong {
 	font-weight: 600;
+}
+
+p {
+	max-width: 700px;
 }

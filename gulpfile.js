@@ -127,9 +127,7 @@ function watchFiles() {
 // Launch the Server
 function browserSync(done) {
 	browsersync.init({
-		server: {
-			baseDir: './docs',
-		},
+		server: "./docs",
 		open: true,
 	});
 	done();

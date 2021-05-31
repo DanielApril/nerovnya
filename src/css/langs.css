@@ -1,0 +1,24 @@
+.site-langs {
+	display: flex;
+	align-items: center;
+}
+
+.site-lang {
+	padding: 4px 8px;
+	text-transform: uppercase;
+	text-decoration: none;
+	opacity: .7;
+}
+
+.site-lang._active {
+	font-weight: 600;
+	opacity: 1;
+}
+
+.site-lang-divider {
+	margin: 0 4px;
+	width: 1px;
+	height: 12px;
+	background-color: var(--cl-text-contrast);
+	opacity: .7;
+}

@@ -1,27 +1,34 @@
 :root {
 	--cl-white: #FFFFFF;
-	--cl-salad-md: #80D0C7;
-	--cl-salad-light: #D1FBF6;
-	--cl-aqua-md: #13547A;
-	--cl-aqua-light: #3490C6;
-	--cl-black: #242424;
+	--cl-black: #2C2627;
+	--cl-green: #6EB5A5;
+	--cl-blue-deep: #182F53;
+	--cl-orange-blood: #F85528;
+	--cl-red-dark: #5B0004;
+	--cl-red-pink: #A13842;
+	--cl-beige: #F9F4DB;
 
-	--cl-text: var(--cl-aqua-md);
-	--cl-text-contrast: var(--cl-salad-light);
+	--cl-text: var(--cl-black);
+	--cl-text-alt: var(--cl-orange-blood);
+	--cl-text-contrast: var(--cl-white);
+	--cl-text-contrast-alt: var(--cl-beige);
 
 	--cl-bg: var(--cl-white);
-	--cl-bg-contrast: var(--cl-aqua-md);
+	--cl-bg-alt: var(--cl-beige);
+	--cl-bg-contrast: var(--cl-red-pink);
 
-	--container-width-lg: 1400px;
-	--container-width-md: 1000px;
-	--container-width-sm: 700px;
+	--container-width-lg: 1120px;
+	--container-width-md: 800px;
+	--container-width-sm: 500px;
 
-	--media-reakpoint-lg: 1100px;
-	--media-reakpoint-md: 760px;
-	--media-reakpoint-sm: 500px;
+	--media-breakpoint-desktop: 1200px;
+	--media-breakpoint-tablet: 760px;
+	--media-breakpoint-mobile: 500px;
 
-	--anim-time-lg: .8s;
-	--anim-time-md: .5s;
-	--anim-time-sm: .3s;
+	--anim-time-lg: .5s;
+	--anim-time-md: .3s;
+	--anim-time-sm: .1s;
 	--anim-tf: ease-in-out;
+
+	--aside-width: 300px;
 }
