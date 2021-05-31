@@ -25,55 +25,28 @@ h6 {
 }
 
 h1 {
-	font-size: 24px;
+	font-size: 3rem;
 }
 
 h2 {
-	font-size: 20px;
+	font-size: 2rem;
 }
 
 h3 {
-	font-size: 20px;
+	font-size: 1.8rem;
 }
 
 h4 {
-	font-size: 16px;
+	font-size: 1.6rem;
 }
 
 h5 {
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 h6 {
-	font-size: 16px;
+	font-size: 1rem;
 }
-
-@media (min-width: var(--media-breakpoint-tablet)) {
-	h1 {
-		font-size: 44px;
-	}
-
-	h2 {
-		font-size: 32px;
-	}
-
-	h3 {
-		font-size: 24px;
-	}
-
-	h4 {
-		font-size: 20px;
-	}
-
-	h5 {
-		font-size: 18px;
-	}
-
-	h6 {
-		font-size: 16px;
-	}
-}
-
 
 h1:first-child,
 h2:first-child,
@@ -98,6 +71,13 @@ strong {
 	font-weight: 600;
 }
 
-p {
+p,
+ol,
+ul,
+li {
 	max-width: 700px;
+}
+
+li + li {
+	margin-top: .5em;
 }

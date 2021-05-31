@@ -9,6 +9,7 @@
 }
 
 .site-menu .inner li {
+	margin-top: 0;
 	list-style: none;
 	transition: all var(--anim-time-sm) ease-in-out;
 }
