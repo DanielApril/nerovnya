@@ -426,7 +426,7 @@ li + li {
 }
 
 .section.first-section {
-	background-image: url(/assets/img/projects/sky-house/SKY-house-1-halved.jpg);
+	/* background-image: url(/assets/img/projects/sky-house/SKY-house-1-halved.jpg); */
 }
 
 .workflow {
