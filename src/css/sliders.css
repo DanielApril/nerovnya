@@ -1,0 +1,63 @@
+.swiper-container {
+	padding-bottom: 40px !important;
+}
+
+.swiper-container.swiper-container-vertical {
+	padding: 0 40px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+	margin-top: 0 !important;
+	height: auto !important;
+}
+
+.swiper-button-next .icon,
+.swiper-button-prev .icon {
+	fill: var(--cl-orange-blood)
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	display: none;
+}
+
+.swiper-container-vertical .swiper-button-prev,
+.swiper-container-vertical .swiper-button-next {
+	z-index: 10;
+}
+
+.swiper-navigation {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+}
+
+.swiper-navigation .swiper-button-prev + .swiper-button-next {
+	margin-left: 12px;
+}
+
+.swiper-navigation .swiper-button-prev,
+.swiper-navigation .swiper-button-next {
+	position: static;
+}
+
+.swiper-navigation .annotation {
+	margin-left: auto;
+}
+
+
+.swiper-container-vertical .swiper-button-prev {
+	top: 90px;
+	right: 0;
+	left: auto;
+}
+
+.swiper-container-vertical .swiper-button-next {
+	top: auto;
+	right: 0;
+	left: auto;
+	bottom: 90px;
+}

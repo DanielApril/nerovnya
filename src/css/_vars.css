@@ -17,7 +17,7 @@
 	--cl-bg-alt: var(--cl-beige);
 	--cl-bg-contrast: var(--cl-red-pink);
 
-	--container-width-lg: 1120px;
+	--container-width-lg: 1400px;
 	--container-width-md: 800px;
 	--container-width-sm: 500px;
 
@@ -31,4 +31,5 @@
 	--anim-tf: ease-in-out;
 
 	--aside-width: 300px;
+	--aside-width-padding: 340px;
 }

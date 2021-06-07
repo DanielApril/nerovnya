@@ -57,6 +57,10 @@ h6:first-child {
 	margin-top: 0;
 }
 
+.first-section h1 {
+	letter-spacing: 3px;
+}
+
 mark {
 	background: none;
 	color: var(--cl-text-marked);

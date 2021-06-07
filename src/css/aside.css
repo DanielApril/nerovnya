@@ -1,15 +1,17 @@
 .aside {
 	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
+	top: 20px;
+	bottom: 20px;
+	left: 20px;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	justify-items: end;
 	padding: 40px 50px;
 	width: var(--aside-width);
+	border-radius: 32px;
 	background: var(--cl-black);
 	color: var(--cl-text-contrast);
+	z-index: 10;
 }
 
 .aside:hover {

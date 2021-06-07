@@ -1,15 +1,17 @@
 .aside {
 	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
+	top: 20px;
+	bottom: 20px;
+	left: 20px;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	justify-items: end;
 	padding: 40px 50px;
 	width: var(--aside-width);
+	border-radius: 32px;
 	background: var(--cl-black);
 	color: var(--cl-text-contrast);
+	z-index: 10;
 }
 
 .aside:hover {
@@ -144,22 +146,31 @@ body {
 
 main {
 	position: relative;
-	margin-left: var(--aside-width);
 	min-height: 100vh;
-	background: var(--cl-bg-alt);
 }
 
 .section {
 	padding: 100px 0;
+	padding-left: var(--aside-width-padding);
 }
 
 .section._cover {
 	min-height: 100vh;
 }
 
+.section._center {
+	display: flex;
+	align-items: center;
+}
+
+.section.first-section {
+	background: var(--cl-bg-alt);
+}
+
 .section.first-section h1 {
+	margin-bottom: 0;
 	text-transform: uppercase;
-	line-height: 1.2;
+	line-height: 1;
 	font-weight: 900;
 	font-size: 80px;
 }
@@ -172,6 +183,12 @@ main {
 	background: var(--cl-bg-contrast);
 	color: var(--cl-text-alt);
 }
+
+/* .section__title {
+	position: absolute;
+	top: 12px;
+	left: var(--aside-width-padding);
+} */
 
 .container {
 	margin: 0 auto;
@@ -248,6 +265,70 @@ main {
 	opacity: .7;
 }
 
+.swiper-container {
+	padding-bottom: 40px !important;
+}
+
+.swiper-container.swiper-container-vertical {
+	padding: 0 40px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+	margin-top: 0 !important;
+	height: auto !important;
+}
+
+.swiper-button-next .icon,
+.swiper-button-prev .icon {
+	fill: var(--cl-orange-blood)
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	display: none;
+}
+
+.swiper-container-vertical .swiper-button-prev,
+.swiper-container-vertical .swiper-button-next {
+	z-index: 10;
+}
+
+.swiper-navigation {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+}
+
+.swiper-navigation .swiper-button-prev + .swiper-button-next {
+	margin-left: 12px;
+}
+
+.swiper-navigation .swiper-button-prev,
+.swiper-navigation .swiper-button-next {
+	position: static;
+}
+
+.swiper-navigation .annotation {
+	margin-left: auto;
+}
+
+
+.swiper-container-vertical .swiper-button-prev {
+	top: 90px;
+	right: 0;
+	left: auto;
+}
+
+.swiper-container-vertical .swiper-button-next {
+	top: auto;
+	right: 0;
+	left: auto;
+	bottom: 90px;
+}
+
 html {
 	font-family: 'Montserrat',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';
 	line-height: 1.4;
@@ -307,6 +388,10 @@ h6:first-child {
 	margin-top: 0;
 }
 
+.first-section h1 {
+	letter-spacing: 3px;
+}
+
 mark {
 	background: none;
 	color: var(--cl-text-marked);
@@ -351,7 +436,7 @@ li + li {
 	--cl-bg-alt: var(--cl-beige);
 	--cl-bg-contrast: var(--cl-red-pink);
 
-	--container-width-lg: 1120px;
+	--container-width-lg: 1400px;
 	--container-width-md: 800px;
 	--container-width-sm: 500px;
 
@@ -365,6 +450,7 @@ li + li {
 	--anim-tf: ease-in-out;
 
 	--aside-width: 300px;
+	--aside-width-padding: 340px;
 }
 
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */*,::after,::before{box-sizing:border-box}:root{-moz-tab-size:4;tab-size:4}html{-webkit-text-size-adjust:100%}body{margin:0}hr{height:0;color:inherit}abbr[title]{text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}::-moz-focus-inner{border-style:none;padding:0}:-moz-focusring{outline:1px dotted ButtonText}:-moz-ui-invalid{box-shadow:none}legend{padding:0}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}
@@ -424,9 +510,25 @@ li + li {
 .section {
 	min-height: 400px;
 }
+.page-index .first-section .inner {
+	display: flex;
+	align-items: center;
+}
 
-.section.first-section {
-	/* background-image: url(/assets/img/projects/sky-house/SKY-house-1-halved.jpg); */
+.page-index .section__title {
+	max-width: 500px;
+}
+
+.index-slider {
+	width: 100%;
+	max-width: 800px;
+	height: 500px;
+}
+
+.index-slider .swiper-slide {
+	background-size: cover;
+	background-position: 50% 50%;
+	border-radius: 20px;
 }
 
 .workflow {

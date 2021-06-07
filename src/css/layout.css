@@ -21,22 +21,31 @@ body {
 
 main {
 	position: relative;
-	margin-left: var(--aside-width);
 	min-height: 100vh;
-	background: var(--cl-bg-alt);
 }
 
 .section {
 	padding: 100px 0;
+	padding-left: var(--aside-width-padding);
 }
 
 .section._cover {
 	min-height: 100vh;
 }
 
+.section._center {
+	display: flex;
+	align-items: center;
+}
+
+.section.first-section {
+	background: var(--cl-bg-alt);
+}
+
 .section.first-section h1 {
+	margin-bottom: 0;
 	text-transform: uppercase;
-	line-height: 1.2;
+	line-height: 1;
 	font-weight: 900;
 	font-size: 80px;
 }
@@ -49,6 +58,12 @@ main {
 	background: var(--cl-bg-contrast);
 	color: var(--cl-text-alt);
 }
+
+/* .section__title {
+	position: absolute;
+	top: 12px;
+	left: var(--aside-width-padding);
+} */
 
 .container {
 	margin: 0 auto;

@@ -1,23 +1,26 @@
-let $main = $('main');
-let $pageHeader = $('.page-header');
-let $pageFooter = $('.page-footer');
-let $menuOpenBtn = $('.menu-open-button');
-let $asideEl = $('aside');
+let $main = document.querySelector('main');
+let $pageHeader = document.querySelector('.page-header');
+let $pageFooter = document.querySelector('.page-footer');
+let $menuOpenBtn = document.querySelector('.menu-open-button');
+let $asideEl = document.querySelector('aside');
 
-function openMenu() {
-	$main.addClass('_menu-opened');
-	$pageHeader.addClass('_menu-opened');
-	$pageFooter.addClass('_menu-opened');
-	$asideEl.addClass('_active');
-}
-
-function closeMenu() {
-	$main.removeClass('_menu-opened');
-	$pageHeader.removeClass('_menu-opened');
-	$pageFooter.removeClass('_menu-opened');
-	$asideEl.removeClass('_active');
-}
-
-$(document).ready( function() {
-	$asideEl.addClass('_show');
+// SLIDERS
+const indexSlider = new Swiper('.index-slider', {
+	// direction: 'vertical',
+	speed: 400,
+	centeredSlides: true,
+	slidesPerView: 2,
+	spaceBetween: 32,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	lazy: {
+		loadPrevNext: true
+	},
+	effect: 'coverflow',
+	coverflowEffect: {
+		rotate: 30,
+		slideShadows: false,
+	},
 });

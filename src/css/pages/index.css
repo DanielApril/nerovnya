@@ -1,7 +1,23 @@
 .section {
 	min-height: 400px;
 }
+.page-index .first-section .inner {
+	display: flex;
+	align-items: center;
+}
 
-.section.first-section {
-	/* background-image: url(/assets/img/projects/sky-house/SKY-house-1-halved.jpg); */
+.page-index .section__title {
+	max-width: 500px;
+}
+
+.index-slider {
+	width: 100%;
+	max-width: 800px;
+	height: 500px;
+}
+
+.index-slider .swiper-slide {
+	background-size: cover;
+	background-position: 50% 50%;
+	border-radius: 20px;
 }
