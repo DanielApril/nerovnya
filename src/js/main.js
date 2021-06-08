@@ -3,6 +3,19 @@ let $pageHeader = document.querySelector('.page-header');
 let $pageFooter = document.querySelector('.page-footer');
 let $menuOpenBtn = document.querySelector('.menu-open-button');
 let $asideEl = document.querySelector('aside');
+let $asideCloseEl = document.querySelector('.aside-close');
+let $bodyEl = document.querySelector('body');
+
+function openMenu() {
+	$asideEl.classList.add('_active');
+	$asideCloseEl.classList.add('_active');
+	$bodyEl.classList.add('_no-scroll');
+}
+function closeMenu() {
+	$asideEl.classList.remove('_active');
+	$asideCloseEl.classList.remove('_active');
+	$bodyEl.classList.remove('_no-scroll');
+}
 
 // SLIDERS
 const indexSlider = new Swiper('.index-slider', {

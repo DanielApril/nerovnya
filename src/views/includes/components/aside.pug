@@ -1,7 +1,11 @@
 aside.aside._left
+	button.button.open-menu(onclick="openMenu()")
+
 	include ../elements/siteLogo.pug
 
 	include ../elements/siteMenu.pug
 
 	.aside__bottom
 		include ../elements/siteLangs.pug
+
+.aside-close(onclick="closeMenu()")

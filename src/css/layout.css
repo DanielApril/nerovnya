@@ -15,8 +15,13 @@ body {
 	padding: 0;
 	height: 100%;
 	overflow-x: hidden;
+	overflow-y: scroll;
 	background-color: var(--cl-bg-global);
 	color: var(--cl-text);
+}
+
+body._no-scroll {
+	overflow-y: hidden;
 }
 
 main {
@@ -25,8 +30,7 @@ main {
 }
 
 .section {
-	padding: 100px 0;
-	padding-left: var(--aside-width-padding);
+	padding: 100px 80px;
 }
 
 .section._cover {
@@ -59,16 +63,16 @@ main {
 	color: var(--cl-text-contrast);
 }
 
-/* .section__title {
-	position: absolute;
-	top: 12px;
+.section__title {
+	/* position: fixed; */
+	top: 50%;
 	left: var(--aside-width-padding);
-} */
+}
 
 .container {
 	margin: 0 auto;
 	width: 100%;
-	max-width: var(--container-width-lg);
+	/* max-width: var(--container-width-lg); */
 	padding: 0 40px;
 }
 

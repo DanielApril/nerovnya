@@ -1,17 +1,27 @@
 .aside {
 	position: fixed;
 	top: 20px;
+	right: 200px;
 	bottom: 20px;
 	left: 20px;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
-	justify-items: end;
+	justify-items: start;
 	padding: 40px 50px;
-	width: var(--aside-width);
 	border-radius: 32px;
 	background: var(--cl-black);
 	color: var(--cl-text-contrast);
-	z-index: 10;
+	transform: translateX( calc(-100% + 28px) );
+	transition: transform .3s ease-in-out;
+	z-index: 100;
+}
+
+.aside:not(._active):hover {
+	transform: translateX( calc(-100% + 50px) );
+}
+
+.aside._active {
+	transform: translateX(0);
 }
 
 .aside:hover {
@@ -29,4 +39,27 @@
 
 .aside .site-menu {
 	align-self: center;
+}
+
+.open-menu {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	width: 32px;
+	height: 32px;
+	padding: 0;
+}
+
+.aside-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 99;
+	display: none;
+}
+
+.aside-close._active {
+	display: block;
 }
