@@ -41,3 +41,7 @@ textarea:focus {
 	border: 2px solid var(--cl-red-dark);
 	outline: none;
 }
+
+button[type="submit"] {
+	margin-top: 32px;
+}

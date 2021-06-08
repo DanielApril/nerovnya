@@ -6,6 +6,11 @@
 	align-items: center;
 }
 
+.page-index .first-section {
+	background-position: 50% 50%;
+	background-size: cover;
+}
+
 .page-index .section__title {
 	max-width: 500px;
 }

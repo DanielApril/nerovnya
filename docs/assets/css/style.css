@@ -35,11 +35,13 @@ button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 0;
-	border: 0;
-	border-radius: 0;
+	padding: 8px 32px;
+	border: 2px solid var(--cl-bg-contrast);
+	border-radius: 8px;
 	outline: none;
-	background: none;
+	background: var(--cl-bg-contrast);
+	font-weight: 500;
+	color: var(--cl-text-contrast);
 	cursor: pointer;
 }
 
@@ -94,6 +96,10 @@ textarea:active,
 textarea:focus {
 	border: 2px solid var(--cl-red-dark);
 	outline: none;
+}
+
+button[type="submit"] {
+	margin-top: 32px;
 }
 
 
@@ -170,7 +176,7 @@ main {
 .section.first-section h1 {
 	margin-bottom: 0;
 	text-transform: uppercase;
-	line-height: 1;
+	line-height: 1.1;
 	font-weight: 900;
 	font-size: 80px;
 }
@@ -181,7 +187,7 @@ main {
 
 .section._contrast {
 	background: var(--cl-bg-contrast);
-	color: var(--cl-text-alt);
+	color: var(--cl-text-contrast);
 }
 
 /* .section__title {
@@ -352,7 +358,7 @@ h5,
 h6 {
 	margin: 2em 0 1em;
 	font-weight: 600;
-	color: var(--cl-text-alt);
+	/* color: var(--cl-text-alt); */
 }
 
 h1 {
@@ -386,10 +392,6 @@ h4:first-child,
 h5:first-child,
 h6:first-child {
 	margin-top: 0;
-}
-
-.first-section h1 {
-	letter-spacing: 3px;
 }
 
 mark {
@@ -513,6 +515,11 @@ li + li {
 .page-index .first-section .inner {
 	display: flex;
 	align-items: center;
+}
+
+.page-index .first-section {
+	background-position: 50% 50%;
+	background-size: cover;
 }
 
 .page-index .section__title {
