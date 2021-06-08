@@ -12,7 +12,8 @@
 	background: var(--cl-black);
 	color: var(--cl-text-contrast);
 	transform: translateX( calc(-100% + 28px) );
-	transition: transform .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	opacity: .7;
 	z-index: 100;
 }
 
@@ -22,6 +23,7 @@
 
 .aside._active {
 	transform: translateX(0);
+	opacity: 1;
 }
 
 .aside:hover {
@@ -50,6 +52,7 @@
 	padding: 0;
 	transition: opacity .2s linear;
 	opacity: 1;
+	background-color: var(--cl-beige);
 }
 
 .open-menu._hidden {

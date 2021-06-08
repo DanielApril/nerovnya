@@ -23,8 +23,9 @@ function closeMenu() {
 // SLIDERS
 const indexSlider = new Swiper('.index-slider', {
 	// direction: 'vertical',
-	speed: 400,
+	speed: 700,
 	centeredSlides: true,
+	allowTouchMove: false,
 	slidesPerView: 2,
 	spaceBetween: 32,
 	navigation: {
@@ -34,9 +35,8 @@ const indexSlider = new Swiper('.index-slider', {
 	lazy: {
 		loadPrevNext: true
 	},
-	effect: 'coverflow',
-	coverflowEffect: {
-		rotate: 30,
-		slideShadows: false,
+	effect: 'fade',
+	fadeEffect: {
+		crossFade: true
 	},
 });

@@ -64,9 +64,9 @@ main {
 }
 
 .section__title {
-	/* position: fixed; */
-	top: 50%;
-	left: var(--aside-width-padding);
+	position: relative;
+	text-shadow: 2px 2px 4px var(--cl-blue-deep-05);
+	z-index: 50;
 }
 
 .container {

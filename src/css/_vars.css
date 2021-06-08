@@ -3,10 +3,12 @@
 	--cl-black: #2C2627;
 	--cl-green: #6EB5A5;
 	--cl-blue-deep: #182F53;
+	--cl-blue-deep-05:rgb(24 47 83 / 50%);
 	--cl-orange-blood: #F85528;
 	--cl-red-dark: #5B0004;
 	--cl-red-pink: #A13842;
 	--cl-beige: #ffffeb;
+	--cl-beige-05: rgb(255 255 235 / 50%);
 
 	--cl-text: var(--cl-black);
 	--cl-text-alt: var(--cl-orange-blood);
