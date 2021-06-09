@@ -14,14 +14,29 @@ block content
 				.swiper-wrapper
 					.swiper-slide.swiper-lazy(data-background="../../assets/img/projects/amber-house/AMBER-house-1.jpg")
 						.swiper-lazy-preloader
+						.index-slider__info
+							.index-slider__project-type Villa
+							a.index-slider__project-name(href="/projects.html") Solo
 					.swiper-slide.swiper-lazy(data-background="../../assets/img/projects/amber-house/AMBER-house-2.jpg")
 						.swiper-lazy-preloader
+						.index-slider__info
+							.index-slider__project-type Hotel
+							a.index-slider__project-name(href="/projects.html") Hilton
 					.swiper-slide.swiper-lazy(data-background="../../assets/img/projects/amber-house/AMBER-house-3.jpg")
 						.swiper-lazy-preloader
-					.swiper-slide.swiper-lazy(data-background="../../assets/img/projects/amber-house/AMBER-house-4.jpg")
+						.index-slider__info
+							.index-slider__project-type Apartment
+							a.index-slider__project-name(href="/projects.html") Vidovie
+					.swiper-slide.swiper-lazy(data-background="../../assets/img/projects/fachwerk-house/F-house-1.jpg")
 						.swiper-lazy-preloader
-					.swiper-slide.swiper-lazy(data-background="../../assets/img/projects/amber-house/AMBER-house-5.jpg")
+						.index-slider__info
+							.index-slider__project-type Retreat
+							a.index-slider__project-name(href="/projects.html") Tactical
+					.swiper-slide.swiper-lazy(data-background="../../assets/img/projects/fachwerk-house/F-house-2.jpg")
 						.swiper-lazy-preloader
+						.index-slider__info
+							.index-slider__project-type Public space
+							a.index-slider__project-name(href="/projects.html") Your sister
 				.swiper-navigation
 					.swiper-button-prev
 						.icon
@@ -29,8 +44,9 @@ block content
 					.swiper-button-next
 						.icon
 							include ../../img/icons/arrow-right.svg
-					//- .annotation
-					//- 	a(href="/projects.html") Все проекты
+
+			.index-all-projects
+				a(href="/projects.html") Все проекты
 
 	section.section.team._contrast
 		.container

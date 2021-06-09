@@ -73,3 +73,10 @@
 .aside-close._active {
 	display: block;
 }
+
+.aside__bottom {
+	display: flex;
+	padding-top: 40px;
+	width: 100%;
+	border-top: 1px solid var(--cl-beige-05);
+}

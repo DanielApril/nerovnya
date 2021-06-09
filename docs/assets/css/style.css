@@ -74,6 +74,13 @@
 	display: block;
 }
 
+.aside__bottom {
+	display: flex;
+	padding-top: 40px;
+	width: 100%;
+	border-top: 1px solid var(--cl-beige-05);
+}
+
 button {
 	display: flex;
 	justify-content: center;
@@ -337,7 +344,7 @@ main {
 
 .swiper-button-next .icon,
 .swiper-button-prev .icon {
-	fill: var(--cl-orange-blood);
+	fill: var(--cl-text-contrast);
 	width: 100%;
 	height: 100%;
 }
@@ -603,6 +610,48 @@ li + li {
 	min-width: 64px;
 	/* background-color: var(--cl-beige-05); */
 	border-radius: 64px;
+}
+
+.index-all-projects {
+	position: absolute;
+	top: 80px;
+	right: 80px;
+	z-index: 50;
+}
+
+.index-all-projects a {
+	padding: 12px 24px;
+	text-decoration: none;
+	color: var(--cl-text-contrast);
+	border: 2px solid;
+	border-radius: 50px;
+}
+
+.index-slider__info {
+	position: absolute;
+	bottom: 80px;
+	right: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 32px;
+	min-width: 400px;
+	height: 64px;
+	font-size: 36px;
+	color: var(--cl-text-contrast);
+	border: 2px solid;
+	border-radius: 64px;
+	z-index: 50;
+}
+
+.index-slider__project-type::after {
+	content: '—';
+	display: inline-flex;
+	margin: 0 20px;
+}
+
+.index-slider__project-name {
+	font-weight: 500;
 }
 
 .workflow {
