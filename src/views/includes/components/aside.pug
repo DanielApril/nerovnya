@@ -1,5 +1,14 @@
 aside.aside._left
-	button.button.open-menu(onclick="openMenu()")
+	.open-menu(onclick="openMenu()")
+		.icon
+			include ../../../img/icons/menu.svg
+
+	.close-menu._hidden(onclick="closeMenu()")
+		.icon
+			include ../../../img/icons/cross.svg
+
+	.site-label
+		include ../../../img/label.svg
 
 	include ../elements/siteLogo.pug
 
@@ -8,4 +17,4 @@ aside.aside._left
 	.aside__bottom
 		include ../elements/siteLangs.pug
 
-.aside-close(onclick="closeMenu()")
+.overlay-aside-close(onclick="closeMenu()")

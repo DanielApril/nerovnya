@@ -7,46 +7,66 @@ block vars
 
 block content
 	section.section.first-section._cover._center
-		.container
-			h1.section__title Делаем крутые штуки
+		//- h1.section__title Делаем крутые штуки
 
-			.swiper-container.index-slider
-				.swiper-wrapper
-					.swiper-slide.swiper-lazy(data-background="../../assets/img/projects/amber-house/AMBER-house-1.jpg")
-						.swiper-lazy-preloader
+		.swiper-container.index-slider
+			.swiper-wrapper
+				.swiper-slide
+					.swiper-lazy-preloader
+					.container
 						.index-slider__info
-							.index-slider__project-type Villa
-							a.index-slider__project-name(href="/projects.html") Solo
-					.swiper-slide.swiper-lazy(data-background="../../assets/img/projects/amber-house/AMBER-house-2.jpg")
-						.swiper-lazy-preloader
-						.index-slider__info
-							.index-slider__project-type Hotel
-							a.index-slider__project-name(href="/projects.html") Hilton
-					.swiper-slide.swiper-lazy(data-background="../../assets/img/projects/amber-house/AMBER-house-3.jpg")
-						.swiper-lazy-preloader
-						.index-slider__info
-							.index-slider__project-type Apartment
-							a.index-slider__project-name(href="/projects.html") Vidovie
-					.swiper-slide.swiper-lazy(data-background="../../assets/img/projects/fachwerk-house/F-house-1.jpg")
-						.swiper-lazy-preloader
-						.index-slider__info
-							.index-slider__project-type Retreat
-							a.index-slider__project-name(href="/projects.html") Tactical
-					.swiper-slide.swiper-lazy(data-background="../../assets/img/projects/fachwerk-house/F-house-2.jpg")
-						.swiper-lazy-preloader
-						.index-slider__info
-							.index-slider__project-type Public space
-							a.index-slider__project-name(href="/projects.html") Your sister
-				.swiper-navigation
-					.swiper-button-prev
-						.icon
-							include ../../img/icons/arrow-left.svg
-					.swiper-button-next
-						.icon
-							include ../../img/icons/arrow-right.svg
+							span.index-slider__project-type Villa
+							span.index-slider__project-name.section__title Solo
+							span.index-slider__project-desc Can you live in glass house, moron?
+							a.index-slider__project-link(href="/project.html")
+								| Explore
+								.icon
+									include ../../img/icons/arrow-right.svg
 
-			.index-all-projects
-				a(href="/projects.html") Все проекты
+					.index-slider__img
+						img.swiper-lazy(data-src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg")
+				.swiper-slide
+					.swiper-lazy-preloader
+					.container
+						.index-slider__info
+							span.index-slider__project-type Hotel
+							span.index-slider__project-name.section__title Hilton
+					.index-slider__img
+						img.swiper-lazy(data-src="../../assets/img/projects/test-project/1.jpg")
+				.swiper-slide
+					.swiper-lazy-preloader
+					.container
+						.index-slider__info
+							span.index-slider__project-type Apartment
+							span.index-slider__project-name.section__title Vidovie
+					.index-slider__img
+						img.swiper-lazy(data-src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg")
+				.swiper-slide
+					.swiper-lazy-preloader
+					.container
+						.index-slider__info
+							span.index-slider__project-type Retreat
+							span.index-slider__project-name.section__title Tactical
+					.index-slider__img
+						img.swiper-lazy(data-src="../../assets/img/projects/test-project/1.jpg")
+				.swiper-slide
+					.swiper-lazy-preloader
+					.container
+						.index-slider__info
+							span.index-slider__project-type Public space
+							span.index-slider__project-name.section__title Your sister
+					.index-slider__img
+						img.swiper-lazy(data-src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg")
+			.swiper-navigation
+				.button-prev
+					.icon
+						include ../../img/icons/arrow-left.svg
+				.button-next
+					.icon
+						include ../../img/icons/arrow-right.svg
+
+		.index-all-projects
+			a(href="/projects.html") Все проекты
 
 	section.section.team._contrast
 		.container
