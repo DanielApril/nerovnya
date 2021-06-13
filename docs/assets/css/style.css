@@ -11,7 +11,7 @@
 	background: var(--cl-bg);
 	box-shadow: 0 0 8px -4px var(--cl-black);
 	color: var(--cl-text-contrast);
-	transform: translateX( calc(-100% + 52px) );
+	transform: translateX( calc(-100% + var(--aside-offset)) );
 	transition: all .3s ease-in-out;
 	z-index: 100;
 }
@@ -237,7 +237,7 @@ main {
 }
 
 .section {
-	padding: 100px 80px;
+	padding: 100px 0;
 }
 
 .section._cover {
@@ -247,14 +247,6 @@ main {
 .section._center {
 	display: flex;
 	align-items: center;
-}
-
-.section.first-section h1 {
-	margin-bottom: 0;
-	text-transform: uppercase;
-	line-height: 1.1;
-	font-weight: 900;
-	font-size: 80px;
 }
 
 .section._alt {
@@ -267,8 +259,11 @@ main {
 }
 
 .section__title {
-	position: relative;
-	z-index: 50;
+	grid-column: 2/3;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 3rem;
+	z-index: 30;
 }
 
 .container {
@@ -276,6 +271,16 @@ main {
 	width: 100%;
 	max-width: var(--container-width-lg);
 	padding: 0 40px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 400px 1020px 1fr;
+	padding-left: var(--aside-offset);
+}
+
+.grid-container._reverse {
+	grid-template-columns: 1fr 1020px 400px 1fr;
 }
 
 .icon {
@@ -506,6 +511,8 @@ li + li {
 :root {
 	--cl-white: #FFFFFF;
 	--cl-black: rgb(44 38 39);
+	--cl-black-05: rgb(44 38 39 / 50%);
+	--cl-black-075: rgb(44 38 39 / 75%);
 	--cl-green: #6EB5A5;
 	--cl-blue-deep: #182F53;
 	--cl-blue-deep-05:rgb(24 47 83 / 50%);
@@ -539,6 +546,7 @@ li + li {
 
 	--aside-width: 300px;
 	--aside-width-padding: 340px;
+	--aside-offset: 52px;
 }
 
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */*,::after,::before{box-sizing:border-box}:root{-moz-tab-size:4;tab-size:4}html{-webkit-text-size-adjust:100%}body{margin:0}hr{height:0;color:inherit}abbr[title]{text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}::-moz-focus-inner{border-style:none;padding:0}:-moz-focusring{outline:1px dotted ButtonText}:-moz-ui-invalid{box-shadow:none}legend{padding:0}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}
@@ -667,6 +675,7 @@ li + li {
 	height: 100%;
 	background: rgb(255,255,255);
 	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,0) 50%);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,0.75) 35%, rgba(255,255,255,0) 50%);
 	z-index: 50;
 }
 
@@ -684,9 +693,6 @@ li + li {
 }
 
 .index-slider__project-name {
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 3rem;
 	transform: translateX(-40px);
 	opacity: 0;
 	transition: all .5s ease-in-out .3s;
@@ -726,6 +732,156 @@ li + li {
 .index-slider .swiper-slide-active .index-slider__project-link {
 	opacity: 1;
 	transform: translateX(0px);
+}
+
+.index-project {
+	position: relative;
+	align-items: center;
+	padding-left: var(--aside-offset);
+	grid-template-rows: 600px;
+	z-index: 50;
+}
+
+.index-project + .index-project {
+	margin-top: 120px;
+}
+
+.index-project__info {
+	grid-column: 2/3;
+	padding: 24px 40px;
+	background-color: var(--cl-bg);
+}
+
+.index-project__type {
+	font-weight: 500;
+}
+
+.index-project__name {
+	margin: 12px 0 40px;
+	line-height: 1.2;
+	font-weight: 900;
+	font-size: 32px;
+}
+
+.index-project__tags {
+	display: flex;
+	flex-wrap: wrap;
+	transform: translateX(-12px);
+}
+
+.index-project__tag {
+	margin-right: 8px;
+	padding: 4px 12px;
+	border-radius: 20px;
+	transition: all .2s ease-in-out;
+	text-decoration: none;
+}
+
+.index-project__tag:hover {
+	background: var(--cl-green);
+}
+
+.index-project__img {
+	grid-column: 3/5;
+	height: 100%;
+	overflow: hidden;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.index-project__img img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.index-project._reverse .index-project__info {
+	grid-column: 3/4;
+}
+
+.index-project._reverse .index-project__img {
+	grid-column: 1/3;
+	grid-row: 1/2;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.index-team .section__title{
+	grid-column: 2/3;
+	transform: translateY(100px);
+}
+
+.index-team__list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	align-items: stretch;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	height: 600px;
+}
+
+.index-team__item {
+	position: relative;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.index-team__item::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: .7;
+	background: var(--cl-black);
+	pointer-events: none;
+	transition: all .3s ease-in-out;
+	z-index: 15;
+}
+
+.index-team__item:hover .index-team__item-info {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.index-team__item:hover::after {
+	opacity: 0;
+}
+
+.index-team__item .inner {
+	display: flex;
+	height: 100%;
+	text-decoration: none;
+}
+
+.index-team__item-img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 10;
+}
+
+.index-team__item-info {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 40px 0;
+	text-align: center;
+	color: var(--cl-text-contrast);
+	background: var(--cl-black-075);
+	opacity: 0;
+	transform: translateY(20%);
+	transition: all .3s ease-in-out;
+	z-index: 20;
 }
 
 .workflow {

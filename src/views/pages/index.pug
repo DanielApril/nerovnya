@@ -68,17 +68,55 @@ block content
 		.index-all-projects
 			a(href="/projects.html") Все проекты
 
-	section.section.team._contrast
-		.container
-			h2 Команда
-			ul
-				li Александр
-				li Андрей
-				li Сабина
+	section.section.projects
+		.grid-container
+			h2.section__title Projects
+		.index-project.grid-container
+			.index-project__info
+				.index-project__type Villa
+				.index-project__name Abu Dhabi Villa Complex
+				.index-project__tags
+					a.index-project__tag(href="/projects.html") #2020
+					a.index-project__tag(href="/projects.html") #villa
+			.index-project__img
+				img(src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg")
+
+		.index-project.grid-container._reverse
+			.index-project__info
+				.index-project__type Villa
+				.index-project__name Abu Dhabi Villa Complex
+				.index-project__tags
+					a.index-project__tag(href="/projects.html") #2020
+					a.index-project__tag(href="/projects.html") #villa
+			.index-project__img
+				img(src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg")
+
+	section.section.index-team
+		.grid-container
+			h2.section__title Команда
+			ul.index-team__list
+				li.index-team__item._alex
+					a.inner(href="/team.html")
+						.index-team__item-info
+							h3.index-team__item-name Александр
+							p.index-team__item-desc Перебирает Volvo
+						img.index-team__item-img(src="../../assets/img/team/alex.png")
+				li.index-team__item._sabina
+					a.inner(href="/team.html")
+						.index-team__item-info
+							h3.index-team__item-name Сабина
+							p.index-team__item-desc Ругает Саню
+						img.index-team__item-img(src="../../assets/img/team/sabina.png")
+				li.index-team__item._andrew
+					a.inner(href="/team.html")
+						.index-team__item-info
+							h3.index-team__item-name Андрей
+							p.index-team__item-desc Коронит
+						img.index-team__item-img(src="../../assets/img/team/andrew.png")
 
 	section.section.blog
 		.container
-			h2 Блог
+			h2.section__title Блог
 			ul
 				li
 					a(href="/") Про дома
@@ -89,6 +127,6 @@ block content
 
 	section.section.feedback
 		.container
-			h2 LET'S TALK ABOUT YOUR IDEAS!
+			h2.section__title LET'S TALK ABOUT YOUR IDEAS!
 			.contact__form
 				include ../includes/components/form

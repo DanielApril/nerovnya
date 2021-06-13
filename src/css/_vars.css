@@ -1,6 +1,8 @@
 :root {
 	--cl-white: #FFFFFF;
 	--cl-black: rgb(44 38 39);
+	--cl-black-05: rgb(44 38 39 / 50%);
+	--cl-black-075: rgb(44 38 39 / 75%);
 	--cl-green: #6EB5A5;
 	--cl-blue-deep: #182F53;
 	--cl-blue-deep-05:rgb(24 47 83 / 50%);
@@ -34,4 +36,5 @@
 
 	--aside-width: 300px;
 	--aside-width-padding: 340px;
+	--aside-offset: 52px;
 }

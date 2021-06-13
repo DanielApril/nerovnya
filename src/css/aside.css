@@ -11,7 +11,7 @@
 	background: var(--cl-bg);
 	box-shadow: 0 0 8px -4px var(--cl-black);
 	color: var(--cl-text-contrast);
-	transform: translateX( calc(-100% + 52px) );
+	transform: translateX( calc(-100% + var(--aside-offset)) );
 	transition: all .3s ease-in-out;
 	z-index: 100;
 }
