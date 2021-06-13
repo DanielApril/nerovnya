@@ -18,7 +18,7 @@ block content
 							span.index-slider__project-type Villa
 							span.index-slider__project-name.section__title Solo
 							span.index-slider__project-desc Can you live in glass house, moron?
-							a.index-slider__project-link(href="/project.html")
+							a.index-slider__project-link.button-link(href="/project.html")
 								| Explore
 								.icon
 									include ../../img/icons/arrow-right.svg
@@ -72,28 +72,28 @@ block content
 		.grid-container
 			h2.section__title Projects
 		.index-project.grid-container
-			.index-project__info
+			.index-project__info.grid-item._desc
 				.index-project__type Villa
 				.index-project__name Abu Dhabi Villa Complex
 				.index-project__tags
 					a.index-project__tag(href="/projects.html") #2020
 					a.index-project__tag(href="/projects.html") #villa
-			.index-project__img
+			.index-project__img.grid-item._content
 				img(src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg")
 
 		.index-project.grid-container._reverse
-			.index-project__info
+			.index-project__info.grid-item._desc
 				.index-project__type Villa
 				.index-project__name Abu Dhabi Villa Complex
 				.index-project__tags
 					a.index-project__tag(href="/projects.html") #2020
 					a.index-project__tag(href="/projects.html") #villa
-			.index-project__img
+			.index-project__img.grid-item._content
 				img(src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg")
 
 	section.section.index-team
 		.grid-container
-			h2.section__title Команда
+			h2.section__title.grid-item._desc Команда
 			ul.index-team__list
 				li.index-team__item._alex
 					a.inner(href="/team.html")
@@ -114,19 +114,62 @@ block content
 							p.index-team__item-desc Коронит
 						img.index-team__item-img(src="../../assets/img/team/andrew.png")
 
+	section.section.index-workflow
+		.grid-container
+			h2.section__title.grid-item._desc Workflow
+		.grid-container.index-stage
+			.index-stage__info.grid-item._desc
+				.index-stage__name
+					span Stage 1:
+					| Architectural Design
+				.index-stage__duration up to 30 days
+				a.index-stage__link.button-link(href="/project.html")
+					| Explore
+					.icon
+						include ../../img/icons/arrow-right.svg
+			.grid-item._content.index-stage__img
+				img(src="../../assets/img/projects/yukon-house/YUKON-house-4.jpg")
+
+		.grid-container.index-stage._reverse
+			.index-stage__info.grid-item._desc
+				.index-stage__name
+					span Stage 2:
+					| Interior Design
+				.index-stage__duration up to 60 days
+				a.index-stage__link.button-link(href="/project.html")
+					| Explore
+					.icon
+						include ../../img/icons/arrow-right.svg
+			.grid-item._content.index-stage__img
+				img(src="../../assets/img/projects/yukon-house/YUKON-house-5.jpg")
+
+		.grid-container.index-stage
+			.index-stage__info.grid-item._desc
+				.index-stage__name
+					span Stage 3:
+					| Construction Documents
+				.index-stage__duration up to 45 days
+				a.index-stage__link.button-link(href="/project.html")
+					| Explore
+					.icon
+						include ../../img/icons/arrow-right.svg
+			.grid-item._content.index-stage__img
+				img(src="../../assets/img/projects/yukon-house/YUKON-house-6.jpg")
+
+
+	section.section.feedback
+		.grid-container
+			h2.section__title.grid-item._desc Let's talks about your ideas!
+			.grid-item._content.feedback-form
+				include ../includes/components/form
+
 	section.section.blog
-		.container
-			h2.section__title Блог
-			ul
+		.grid-container
+			h2.section__title.grid-item._desc Блог
+			ul.grid-item._content
 				li
 					a(href="/") Про дома
 				li
 					a(href="/") Не про дома
 				li
 					a(href="/") Пустая статья
-
-	section.section.feedback
-		.container
-			h2.section__title LET'S TALK ABOUT YOUR IDEAS!
-			.contact__form
-				include ../includes/components/form

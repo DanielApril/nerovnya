@@ -1,0 +1,66 @@
+.feedback-form {
+	grid-column: 3/4;
+}
+
+.form {
+	display: grid;
+	justify-items: start;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 40px;
+	max-width: 720px;
+}
+
+.form__primary,
+.form__secondary,
+.form__item {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.form__item + .form__item {
+	margin-top: 20px;
+}
+
+.form__item._grow {
+	flex-grow: 1;
+}
+
+label + input,
+label + textarea {
+	margin-top: 4px;
+}
+
+label {
+	font-weight: 600;
+	font-size: 14px;
+}
+
+textarea {
+	flex-grow: 1;
+	resize: vertical;
+	max-height: 400px;
+	min-height: 80px;
+}
+
+input,
+textarea {
+	padding: 8px 12px;
+	width: 100%;
+	border: 2px solid rgba(34, 43, 85, 0.08);
+	border-radius: 4px;
+	outline: none;
+	transition: all .2s ease;
+}
+
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+	border: 2px solid var(--cl-black-05);
+	outline: none;
+}
+
+button[type="submit"] {
+	margin-top: 32px;
+}

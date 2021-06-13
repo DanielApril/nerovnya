@@ -11,3 +11,18 @@ button {
 	color: var(--cl-text-contrast);
 	cursor: pointer;
 }
+
+.button-link {
+	display: inline-flex;
+	align-items: center;
+	padding: 8px 24px;
+	font-weight: 500;
+	border: 2px solid var(--cl-text);
+	border-radius: 50px;
+	text-decoration: none;
+}
+
+.button-link .icon {
+	margin-left: 8px;
+	width: 16px;
+}
