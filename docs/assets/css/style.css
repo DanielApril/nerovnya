@@ -40,7 +40,10 @@
 	width: 100%;
 }
 
-.aside .site-logo svg,
+.aside .site-logo svg {
+	fill: var(--cl-text-contrast);
+}
+
 .aside .site-label svg {
 	fill: var(--cl-text);
 }
@@ -81,9 +84,11 @@
 	pointer-events: none;
 }
 
-.open-menu svg,
-.close-menu svg {
+.open-menu svg {
 	fill: var(--cl-text);
+}
+.close-menu svg {
+	fill: var(--cl-text-contrast);
 }
 
 .aside-close {
@@ -553,6 +558,14 @@ h4:first-child,
 h5:first-child,
 h6:first-child {
 	margin-top: 0;
+}
+
+p {
+	margin: 0;
+}
+
+article p + p {
+	margin-top: .75em;
 }
 
 mark {

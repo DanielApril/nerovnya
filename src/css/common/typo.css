@@ -57,6 +57,14 @@ h6:first-child {
 	margin-top: 0;
 }
 
+p {
+	margin: 0;
+}
+
+article p + p {
+	margin-top: .75em;
+}
+
 mark {
 	background: none;
 	color: var(--cl-text-marked);
