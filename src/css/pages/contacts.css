@@ -10,3 +10,21 @@
 .page-contacts .feedback-form {
 	margin-top: 100px;
 }
+
+.contacts__phone {
+	display: grid;
+	grid-template-columns: min-content min-content auto;
+	grid-gap: 8px;
+	align-items: center;
+	margin: 24px 0 12px;
+	font-size: 20px;
+}
+
+.contacts__phone .icon {
+	width: 24px;
+}
+
+.contacts__phone .phone {
+	margin-left: 12px;
+	text-decoration: none;
+}

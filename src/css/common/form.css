@@ -50,7 +50,7 @@ textarea {
 	border: 2px solid rgba(34, 43, 85, 0.08);
 	border-radius: 4px;
 	outline: none;
-	transition: all .2s ease;
+	transition: border .2s ease;
 }
 
 input:active,
@@ -62,5 +62,4 @@ textarea:focus {
 }
 
 button[type="submit"] {
-	margin-top: 32px;
 }
