@@ -8,11 +8,12 @@
 	justify-items: start;
 	padding: 40px 50px;
 	width: 80%;
-	background: var(--cl-bg);
+	background-color: var(--cl-bg);
 	box-shadow: 0 0 8px -4px var(--cl-black);
 	color: var(--cl-text-contrast);
 	transform: translateX( calc(-100% + var(--aside-offset)) );
-	transition: all .3s ease-in-out;
+	transition: background-color .5s ease-in-out,
+				transform .7s ease-in-out;
 	z-index: 100;
 }
 
@@ -22,7 +23,7 @@
 
 .aside._active {
 	transform: translateX(0);
-	background: var(--cl-orange-blood);
+	background-color: var(--cl-orange-blood);
 }
 
 .aside:not(._active) .site-logo,
@@ -46,6 +47,10 @@
 
 .aside .site-label svg {
 	fill: var(--cl-text);
+}
+
+.aside._active .site-label svg {
+	fill: var(--cl-text-contrast);
 }
 
 .aside .site-label {
