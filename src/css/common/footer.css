@@ -1,6 +1,6 @@
 .page-footer {
-	margin-left: var(--aside-width);
 	padding: 40px 20px 44px;
+	text-align: right;
 }
 
 .site-copyright {
