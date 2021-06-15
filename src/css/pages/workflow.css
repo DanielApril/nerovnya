@@ -1,4 +1,18 @@
-.workflow {
-	/* display: grid; */
-	margin-top: 100px;
+.workflow .section__title {
+	margin-top: 0;
+	font-size: 2rem;
+	font-variant: lining-nums;
+}
+
+.stage__name {
+	display: flex;
+	flex-direction: column;
+	font-weight: 900;
+}
+
+.stage__name span:first-child {
+	margin-bottom: 2rem;
+	font-weight: 600;
+	font-size: 1.5rem;
+	color: var(--cl-orange-blood);
 }
