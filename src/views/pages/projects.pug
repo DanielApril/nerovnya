@@ -7,5 +7,27 @@ block vars
 
 block content
 	section.section.first-section
-		.container
-			h1 Проекты
+		.grid-container.projects-wrapper
+			.grid-item._desc
+				h1.section__title Projects
+
+				.project__filters
+					h3.project__filters-title Categories
+					button.project__filter.is-checked(data-filter="*") All projects
+					button.project__filter(data-filter="._2020") #2020
+					button.project__filter(data-filter="._2021") #2021
+					button.project__filter(data-filter="._villa") #villa
+					button.project__filter(data-filter="._retreat") #retreat
+
+			.grid-item._content.projects-list
+				.inner
+					.project._villa._2020
+						.project__type Villa
+						.project__name Abu Dhabi
+						.project__img
+							img(src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg")
+					.project._villa._2021
+						.project__type Villa
+						.project__name Dhubbaee
+						.project__img
+							img(src="../../assets/img/projects/sky-house/SKY-house-2.jpg")

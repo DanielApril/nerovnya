@@ -1,5 +1,6 @@
 :root {
 	--cl-white: #FFFFFF;
+	--cl-grey-light: #f5f5f6;
 	--cl-black: rgb(44 38 39);
 	--cl-black-05: rgb(44 38 39 / 50%);
 	--cl-black-075: rgb(44 38 39 / 75%);
@@ -17,8 +18,8 @@
 	--cl-text-contrast: var(--cl-white);
 	--cl-text-contrast-alt: var(--cl-beige);
 
-	--cl-bg: var(--cl-white);
-	--cl-bg-alt: var(--cl-beige);
+	--cl-bg: var(--cl-grey-light);
+	--cl-bg-alt: var(--cl-white);
 	--cl-bg-contrast: var(--cl-red-pink);
 
 	--container-width-lg: 1420px;

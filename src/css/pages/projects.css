@@ -1,0 +1,32 @@
+.grid-item._content.projects-list {
+	/* grid-column: 3/4; */
+}
+
+.projects-list .inner {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+}
+
+.project {
+	position: relative;
+}
+
+
+.project__img {
+	max-width: 200px;
+}
+.project__img img {
+}
+
+.project__filters {
+	display: grid;
+	grid-template-rows: min-content;
+	justify-items: start;
+	grid-gap: 12px;
+	margin-top: 100px;
+}
+
+.project__filters-title {
+	margin-bottom: 0;
+}

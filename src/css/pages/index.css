@@ -68,9 +68,9 @@
 	flex-direction: column;
 	justify-content: center;
 	height: 100%;
-	background: rgb(255,255,255);
-	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,0) 50%);
-	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,0.75) 35%, rgba(255,255,255,0) 50%);
+	background: rgb(245,245,246);
+	background: linear-gradient(90deg, rgba(245,245,246,1) 0%, rgba(245,245,246,1) 25%, rgba(245,245,246,0) 50%);
+	background: linear-gradient(90deg, rgba(245,245,246,1) 0%, rgba(245,245,246,1) 25%, rgba(245,245,246,0.75) 35%, rgba(245,245,246,0) 50%);
 	z-index: 50;
 }
 
@@ -126,7 +126,7 @@
 
 .index-project__info {
 	padding: 24px 40px;
-	background-color: var(--cl-bg);
+	background-color: var(--cl-bg-alt);
 }
 
 .index-project__type {

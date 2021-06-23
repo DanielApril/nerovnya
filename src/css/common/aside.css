@@ -8,7 +8,7 @@
 	justify-items: start;
 	padding: 40px 50px;
 	width: 80%;
-	background-color: var(--cl-bg);
+	background-color: var(--cl-bg-alt);
 	box-shadow: 0 0 8px -4px var(--cl-black);
 	color: var(--cl-text-contrast);
 	transform: translateX( calc(-100% + var(--aside-offset)) );

@@ -2,6 +2,11 @@ button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	cursor: pointer;
+	transition: transform .1s ease;
+}
+
+.button {
 	padding: 8px 32px;
 	border: 2px solid var(--cl-bg-contrast);
 	border-radius: 8px;
@@ -9,7 +14,6 @@ button {
 	background: var(--cl-bg-contrast);
 	font-weight: 500;
 	color: var(--cl-text-contrast);
-	cursor: pointer;
 }
 
 .button-link {
@@ -20,9 +24,15 @@ button {
 	border: 2px solid var(--cl-text);
 	border-radius: 50px;
 	text-decoration: none;
+	transition: transform .1s ease;
 }
 
 .button-link .icon {
 	margin-left: 8px;
 	width: 16px;
+}
+
+.button:active,
+.button-link:active {
+	transform: scale(.95);
 }
