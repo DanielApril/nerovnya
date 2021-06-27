@@ -158,10 +158,6 @@
 	background: var(--cl-green);
 }
 
-.index-team .section__title {
-	transform: translateY(100px);
-}
-
 .index-stage {
 	grid-template-rows: 600px;
 	align-items: center;

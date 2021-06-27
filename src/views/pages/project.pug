@@ -34,28 +34,31 @@ block content
 
 
 	section.section._gallery
-		.container
-			.swiper-container.project-slider._primary
-				.swiper-wrapper
-					.swiper-slide
-						.swiper-lazy-preloader
-						.project-slider__img
-							img.swiper-lazy(data-src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg")
-					.swiper-slide
-						.swiper-lazy-preloader
-						.project-slider__img
-							img.swiper-lazy(data-src="../../assets/img/projects/sky-house/SKY-house-1.jpg")
-					.swiper-slide
-						.swiper-lazy-preloader
-						.project-slider__img
-							img.swiper-lazy(data-src="../../assets/img/projects/sky-house/SKY-house-2.jpg")
-				.swiper-navigation
-					.button-prev
-						.icon
-							include ../../img/icons/arrow-left.svg
-					.button-next
-						.icon
-							include ../../img/icons/arrow-right.svg
+		.grid-container
+			.grid-item._desc
+				h2.section__title._shifted Bird view
+			.grid-item._content
+				.swiper-container.project-slider._primary
+					.swiper-wrapper
+						.swiper-slide
+							.swiper-lazy-preloader
+							.project-slider__img
+								img.swiper-lazy(data-src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg")
+						.swiper-slide
+							.swiper-lazy-preloader
+							.project-slider__img
+								img.swiper-lazy(data-src="../../assets/img/projects/sky-house/SKY-house-1.jpg")
+						.swiper-slide
+							.swiper-lazy-preloader
+							.project-slider__img
+								img.swiper-lazy(data-src="../../assets/img/projects/sky-house/SKY-house-2.jpg")
+					.swiper-navigation
+						.button-prev
+							.icon
+								include ../../img/icons/arrow-left.svg
+						.button-next
+							.icon
+								include ../../img/icons/arrow-right.svg
 
 	section.section.project__desc._secondary
 		.grid-container

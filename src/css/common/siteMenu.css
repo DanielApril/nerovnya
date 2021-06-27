@@ -30,3 +30,9 @@
 	font-size: 54px;
 	opacity: .7;
 }
+
+@media(max-width: 600px) {
+	.site-menu .inner a {
+		font-size: 32px;
+	}
+}
