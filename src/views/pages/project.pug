@@ -1,0 +1,74 @@
+extends ../layouts/layout
+
+block vars
+	- var classPage = "page-project"
+	- var titlePage = "Александр Неровня"
+	- var descPage = "Архитектор"
+
+block content
+	section.section.project-hero._cover._center
+		.container
+			.project-hero__info
+				span.project-hero__type Villa
+				h1.project-hero__name.section__title Abu Dhabi Villa Complex
+				span.project-hero__desc Can you live in glass house, moron?
+
+		.project-hero__img
+			img(src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg")
+
+	section.section.project__desc._primary
+		.grid-container
+			.grid-item._desc
+				h2.section__title General Notes
+				.project__desc-table
+					span Type
+					span Villa
+					span Year
+					span 2020
+
+			.grid-item._content
+				article
+					p The Abu Dhabi-located villa complex is designed in a modern, minimalist style with premium finishes. The facades are decorated with luxurious materials such as white polished marble, black polished marble with light gold veins, as well as modern panoramic energy-efficient glazing.
+					p The villa complex was developed in conjunction with the landscape plan, water surfaces and green spaces. The design team was faced with the task of creating an atmosphere of a luxurious oasis both on the territory of the complex and inside each building. Gardens, laid out on the territory, seamlessly penetrate into the buildings and create a single space between the interior and the exterior.
+					p The structural system that underlies the implementation of the proposed architectural design is monolithic reinforced concrete structures. The buildings in the villa complex follow a single design code, which is based on light polished surfaces, tall panoramic windows, abundant green areas and various water spaces
+
+
+	section.section._gallery
+		.container
+			.swiper-container.project-slider._primary
+				.swiper-wrapper
+					.swiper-slide
+						.swiper-lazy-preloader
+						.project-slider__img
+							img.swiper-lazy(data-src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg")
+					.swiper-slide
+						.swiper-lazy-preloader
+						.project-slider__img
+							img.swiper-lazy(data-src="../../assets/img/projects/sky-house/SKY-house-1.jpg")
+					.swiper-slide
+						.swiper-lazy-preloader
+						.project-slider__img
+							img.swiper-lazy(data-src="../../assets/img/projects/sky-house/SKY-house-2.jpg")
+				.swiper-navigation
+					.button-prev
+						.icon
+							include ../../img/icons/arrow-left.svg
+					.button-next
+						.icon
+							include ../../img/icons/arrow-right.svg
+
+	section.section.project__desc._secondary
+		.grid-container
+			.grid-item._desc
+				h2.section__title General Notes
+				.project__desc-table
+					span Type
+					span Villa
+					span Year
+					span 2020
+
+			.grid-item._content
+				article
+					p The Abu Dhabi-located villa complex is designed in a modern, minimalist style with premium finishes. The facades are decorated with luxurious materials such as white polished marble, black polished marble with light gold veins, as well as modern panoramic energy-efficient glazing.
+					p The villa complex was developed in conjunction with the landscape plan, water surfaces and green spaces. The design team was faced with the task of creating an atmosphere of a luxurious oasis both on the territory of the complex and inside each building. Gardens, laid out on the territory, seamlessly penetrate into the buildings and create a single space between the interior and the exterior.
+					p The structural system that underlies the implementation of the proposed architectural design is monolithic reinforced concrete structures. The buildings in the villa complex follow a single design code, which is based on light polished surfaces, tall panoramic windows, abundant green areas and various water spaces

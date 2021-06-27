@@ -1,5 +1,5 @@
 .grid-item._content.projects-list {
-	/* grid-column: 3/4; */
+	grid-column: 3/4;
 }
 
 .projects-list .inner {
@@ -8,15 +8,45 @@
 	grid-gap: 20px;
 }
 
+.gutter-sizer {
+	width: 4%;
+}
+
 .project {
 	position: relative;
+	display: block;
+	margin-bottom: 24px;
+	text-decoration: none;
+	width: 22%;
+	height: 300px;
+}
+
+.project._width-2 {
+	width: 48%;
+}
+
+.project__info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	padding: 12px 20px;
+	background-color: var(--cl-bg);
+}
+
+.project__name {
+	margin: 4px 0 0;
 }
 
 
 .project__img {
-	max-width: 200px;
+	height: 100%;
 }
 .project__img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .project__filters {

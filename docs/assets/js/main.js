@@ -3262,8 +3262,9 @@ function closeMenu() {
 }
 
 // SLIDERS
-var indexSlider = new Swiper('.index-slider', {
-	// direction: 'vertical',
+
+// INDEX
+var indexSlider = new Swiper('.projects-slider', {
 	speed: 700,
 	centeredSlides: true,
 	allowTouchMove: false,
@@ -3282,14 +3283,36 @@ var indexSlider = new Swiper('.index-slider', {
 	}
 });
 
-// init Isotope
-var iso = new Isotope($projectsListEl, {
-	itemSelector: '.project',
-	layoutMode: 'fitRows',
-	fitRows: {
-		gutter: 20
+// PROJECT SLIDER
+var projectSlider = new Swiper('.project-slider', {
+	speed: 700,
+	centeredSlides: true,
+	allowTouchMove: true,
+	slidesPerView: 1,
+	spaceBetween: 0,
+	navigation: {
+		nextEl: '.button-next',
+		prevEl: '.button-prev'
+	},
+	lazy: {
+		loadPrevNext: true
+	},
+	effect: 'fade',
+	fadeEffect: {
+		crossFade: true
 	}
 });
+
+// init Isotope
+if ($projectsListEl != null) {
+	var iso = new Isotope($projectsListEl, {
+		itemSelector: '.project',
+		layoutMode: 'fitRows',
+		fitRows: {
+			gutter: '.gutter-sizer'
+		}
+	});
+}
 
 // filter functions
 var filterFns = {
@@ -3307,16 +3330,18 @@ var filterFns = {
 
 // bind filter button click
 var filtersElem = document.querySelector('.project__filters');
-filtersElem.addEventListener('click', function (event) {
-	// only work with buttons
-	if (!matchesSelector(event.target, 'button')) {
-		return;
-	}
-	var filterValue = event.target.getAttribute('data-filter');
-	// use matching filter function
-	filterValue = filterFns[filterValue] || filterValue;
-	iso.arrange({ filter: filterValue });
-});
+if (filtersElem != null) {
+	filtersElem.addEventListener('click', function (event) {
+		// only work with buttons
+		if (!matchesSelector(event.target, 'button')) {
+			return;
+		}
+		var filterValue = event.target.getAttribute('data-filter');
+		// use matching filter function
+		filterValue = filterFns[filterValue] || filterValue;
+		iso.arrange({ filter: filterValue });
+	});
+}
 
 // change is-checked class on buttons
 var buttonGroups = document.querySelectorAll('.project__filters');

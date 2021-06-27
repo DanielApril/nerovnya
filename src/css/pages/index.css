@@ -6,7 +6,7 @@
 	position: relative;
 }
 
-.page-index .index-slider {
+.page-index .projects-slider {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -14,21 +14,21 @@
 	left: 0;
 }
 
-.index-slider .swiper-slide {
+.projects-slider .swiper-slide {
 	background-size: cover;
 	background-position: 50% 50%;
 }
 
-.index-slider .swiper-navigation {
+.projects-slider .swiper-navigation {
 	position: absolute;
 	justify-content: flex-start;
-	left: calc((100% - var(--container-width-lg)) / 2 + 40px);
+	left: calc((100% - var(--container-width-lg)) / 2 + 12px);
 	bottom: 80px;
 	z-index: 50;
 }
 
-.index-slider .button-prev,
-.index-slider .button-next {
+.projects-slider .button-prev,
+.projects-slider .button-next {
 	padding: 12px;
 }
 
@@ -47,7 +47,7 @@
 	border-radius: 50px;
 }
 
-.index-slider__img {
+.projects-slider__img {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -56,13 +56,13 @@
 	z-index: 40;
 }
 
-.index-slider__img img {
+.projects-slider__img img {
 	object-fit: cover;
 	width: 100%;
 	height: 100%;
 }
 
-.index-slider .container {
+.projects-slider .container {
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -74,33 +74,33 @@
 	z-index: 50;
 }
 
-.index-slider__info {
+.projects-slider__info {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	z-index: 50;
 }
 
-.index-slider__project-type {
+.projects-slider__project-type {
 	transform: translateX(-40px);
 	opacity: 0;
 	transition: all .5s ease-in-out .1s;
 }
 
-.index-slider__project-name {
+.projects-slider__project-name {
 	transform: translateX(-40px);
 	opacity: 0;
 	transition: all .5s ease-in-out .3s;
 }
 
-.index-slider__project-desc {
+.projects-slider__project-desc {
 	margin-top: 20px;
 	transform: translateX(-40px);
 	opacity: 0;
 	transition: all .5s ease-in-out .5s;
 }
 
-.index-slider__project-link {
+.projects-slider__project-link {
 	margin-top: 80px;
 	transform: translateX(-6px);
 	transform: translateX(-40px);
@@ -108,10 +108,10 @@
 	transition: all .5s ease-in-out .7s;
 }
 
-.index-slider .swiper-slide-active .index-slider__project-type,
-.index-slider .swiper-slide-active .index-slider__project-name,
-.index-slider .swiper-slide-active .index-slider__project-desc,
-.index-slider .swiper-slide-active .index-slider__project-link {
+.projects-slider .swiper-slide-active .projects-slider__project-type,
+.projects-slider .swiper-slide-active .projects-slider__project-name,
+.projects-slider .swiper-slide-active .projects-slider__project-desc,
+.projects-slider .swiper-slide-active .projects-slider__project-link {
 	opacity: 1;
 	transform: translateX(0px);
 }
