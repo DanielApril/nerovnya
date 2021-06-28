@@ -337,7 +337,7 @@ main {
 
 @media (max-width: 1600px) {
 	.section {
-		padding: 80px 20px 80px 80px;
+		padding: 64px 0;
 	}
 }
 
@@ -348,7 +348,7 @@ main {
 }
 
 .section._cover {
-	min-height: 100vh;
+	min-height: 100vh !important;
 }
 
 .section._center {
@@ -405,12 +405,45 @@ main {
 	padding-left: var(--aside-offset);
 }
 
+@media (max-width: 1600px) {
+	.grid-container {
+		grid-template-columns: 400px 1fr;
+		padding-left: 80px;
+	}
+}
+
+@media (max-width: 600px) {
+	.grid-container {
+		padding: 0;
+	}
+}
+
+
 .grid-container + .grid-container {
 	margin-top: 120px;
 }
 
+@media (max-width: 1600px) {
+	.grid-container + .grid-container{
+		margin-top: 60px;
+	}
+}
+
+@media (max-width: 600px) {
+	.grid-container + .grid-container{
+		margin-top: 20px;
+	}
+}
+
 .grid-container._reverse {
 	grid-template-columns: 1fr 1020px 400px 1fr;
+}
+
+@media (max-width: 1600px) {
+	.grid-container._reverse {
+		grid-template-columns: 1fr 400px;
+		padding-left: var(--aside-offset);
+	}
 }
 
 .grid-item._desc {
@@ -420,6 +453,17 @@ main {
 .grid-item._content {
 	grid-column: 3/5;
 	height: 100%;
+}
+
+@media(max-width: 1600px) {
+	.grid-item._desc {
+		grid-column: 1/2;
+	}
+
+	.grid-item._content {
+		grid-column: 2/3;
+		height: auto;
+	}
 }
 
 @media(max-width: 600px) {
@@ -453,30 +497,6 @@ main {
 
 .grid-container._reverse .grid-item._desc {
 	grid-column: 3/4;
-}
-
-@media(max-width: 1600px) {
-	.grid-container {
-		grid-template-columns: 1fr;
-		padding-right: 20px;
-		padding-left: 20px;
-	}
-
-	.grid-item._desc,
-	.section__title {
-		grid-column: auto;
-	}
-
-	.grid-item._content {
-		grid-column: auto;
-		height: auto;
-	}
-}
-
-@media (max-width: 600px) {
-	.grid-container {
-		padding: 0;
-	}
 }
 
 .icon {
@@ -576,7 +596,7 @@ main {
 
 .button-next .icon svg,
 .button-prev .icon svg {
-	fill: var(--cl-text);
+	fill: var(--cl-text-contrast);
 }
 
 .button-next:after,
@@ -912,8 +932,14 @@ li + li {
 	text-decoration: none;
 }
 
-.section {
+.page-index .section {
 	min-height: 400px;
+}
+
+@media(max-width: 600px) {
+	.page-index .section {
+		min-height: auto;
+	}
 }
 
 .page-index .first-section {
@@ -936,29 +962,52 @@ li + li {
 .projects-slider .swiper-navigation {
 	position: absolute;
 	justify-content: flex-start;
-	left: calc((100% - var(--container-width-lg)) / 2 + 12px);
+	right: 80px;
 	bottom: 80px;
 	z-index: 50;
+}
+
+@media(max-width: 600px) {
+	.projects-slider .swiper-navigation {
+		right: 40px;
+	}
 }
 
 .projects-slider .button-prev,
 .projects-slider .button-next {
 	padding: 12px;
+	background-color: var(--cl-black);
+	border-radius: 50%;
 }
 
 .index-all-projects {
 	position: absolute;
-	top: 80px;
-	right: 80px;
+	bottom: 80px;
+	left: calc((100% - var(--container-width-lg)) / 2 + 12px);
+	display: flex;
 	z-index: 50;
 }
 
+@media(max-width: 1600px) {
+	.index-all-projects {
+		left: 100px;
+	}
+}
+
+@media(max-width: 1600px) {
+	.index-all-projects {
+		right: 40px;
+		top: 12px;
+		bottom: auto;
+		left: auto;
+	}
+}
+
 .index-all-projects a {
-	padding: 12px 24px;
+	padding: 4px;
 	text-decoration: none;
 	color: var(--cl-text);
-	border: 2px solid;
-	border-radius: 50px;
+	border-bottom: 2px solid;
 }
 
 .projects-slider__img {
@@ -986,6 +1035,22 @@ li + li {
 	background: linear-gradient(90deg, rgba(245,245,246,1) 0%, rgba(245,245,246,1) 25%, rgba(245,245,246,0) 50%);
 	background: linear-gradient(90deg, rgba(245,245,246,1) 0%, rgba(245,245,246,1) 25%, rgba(245,245,246,0.75) 35%, rgba(245,245,246,0) 50%);
 	z-index: 50;
+}
+
+@media(max-width: 1600px) {
+	.projects-slider .container {
+		padding-left: 100px;
+		background: linear-gradient(90deg, rgba(245,245,246,1) 0%, rgba(245,245,246,1) 25%, rgba(245,245,246,0.75) 50%, rgba(245,245,246,0) 75%);
+	}
+}
+
+@media(max-width: 600px) {
+	.projects-slider .container {
+		justify-content: start;
+		padding-top: 100px;
+		padding-left: 40px;
+		background: linear-gradient(135deg, rgba(245,245,246,1) 0%, rgba(245,245,246,1) 25%, rgba(245,245,246,0.75) 50%, rgba(245,245,246,0) 75%);
+	}
 }
 
 .projects-slider__info {
@@ -1036,6 +1101,19 @@ li + li {
 	padding-left: var(--aside-offset);
 	grid-template-rows: 600px;
 	z-index: 50;
+}
+
+@media(max-width: 1600px) {
+	.index-project {
+		grid-template-rows: min-content;
+		padding-left: 80px;
+	}
+}
+
+@media(max-width: 600px) {
+	.index-project {
+		grid-template-rows: auto;
+	}
 }
 
 .index-project__info {

@@ -20,8 +20,6 @@ block content
 							span.projects-slider__project-desc Can you live in glass house, moron?
 							a.projects-slider__project-link.button-link(href="/project.html")
 								| Explore
-								.icon
-									include ../../img/icons/arrow-right.svg
 
 					.projects-slider__img
 						img.swiper-lazy(data-src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg")
@@ -31,6 +29,8 @@ block content
 						.projects-slider__info
 							span.projects-slider__project-type Hotel
 							span.projects-slider__project-name.section__title Hilton
+							a.projects-slider__project-link.button-link(href="/project.html")
+								| Explore
 					.projects-slider__img
 						img.swiper-lazy(data-src="../../assets/img/projects/test-project/1.jpg")
 				.swiper-slide
@@ -39,6 +39,8 @@ block content
 						.projects-slider__info
 							span.projects-slider__project-type Apartment
 							span.projects-slider__project-name.section__title Vidovie
+							a.projects-slider__project-link.button-link(href="/project.html")
+								| Explore
 					.projects-slider__img
 						img.swiper-lazy(data-src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg")
 				.swiper-slide
@@ -47,6 +49,8 @@ block content
 						.projects-slider__info
 							span.projects-slider__project-type Retreat
 							span.projects-slider__project-name.section__title Tactical
+							a.projects-slider__project-link.button-link(href="/project.html")
+								| Explore
 					.projects-slider__img
 						img.swiper-lazy(data-src="../../assets/img/projects/test-project/1.jpg")
 				.swiper-slide
@@ -55,6 +59,8 @@ block content
 						.projects-slider__info
 							span.projects-slider__project-type Public space
 							span.projects-slider__project-name.section__title Your sister
+							a.projects-slider__project-link.button-link(href="/project.html")
+								| Explore
 					.projects-slider__img
 						img.swiper-lazy(data-src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg")
 			.swiper-navigation
@@ -70,7 +76,8 @@ block content
 
 	section.section.projects
 		.grid-container
-			h2.section__title Projects
+			.grid-item._desc
+				h2.section__title Projects
 		.index-project.grid-container
 			.index-project__info.grid-item._desc
 				.index-project__type Villa
@@ -117,7 +124,8 @@ block content
 
 	section.section.index-workflow
 		.grid-container
-			h2.section__title.grid-item._desc Workflow
+			.grid-item._desc
+				h2.section__title Workflow
 		.grid-container.index-stage
 			.index-stage__info.grid-item._desc
 				.index-stage__name
@@ -160,13 +168,15 @@ block content
 
 	section.section.feedback
 		.grid-container
-			h2.section__title.grid-item._desc Let's talks about your ideas!
+			.grid-item._desc
+				h2.section__title Let's talks about your ideas!
 			.grid-item._content.feedback-form
 				include ../includes/components/form
 
 	section.section.index-blog
 		.grid-container
-			h2.section__title.grid-item._desc Блог
+			.grid-item._desc
+				h2.section__title Блог
 			ul.grid-item._content.blog__list
 				li.blog__item
 					a(href="/") Про дома

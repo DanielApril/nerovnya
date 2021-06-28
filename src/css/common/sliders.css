@@ -20,7 +20,7 @@
 
 .button-next .icon svg,
 .button-prev .icon svg {
-	fill: var(--cl-text);
+	fill: var(--cl-text-contrast);
 }
 
 .button-next:after,

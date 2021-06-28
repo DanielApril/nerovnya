@@ -1,5 +1,11 @@
-.section {
+.page-index .section {
 	min-height: 400px;
+}
+
+@media(max-width: 600px) {
+	.page-index .section {
+		min-height: auto;
+	}
 }
 
 .page-index .first-section {
@@ -22,29 +28,52 @@
 .projects-slider .swiper-navigation {
 	position: absolute;
 	justify-content: flex-start;
-	left: calc((100% - var(--container-width-lg)) / 2 + 12px);
+	right: 80px;
 	bottom: 80px;
 	z-index: 50;
+}
+
+@media(max-width: 600px) {
+	.projects-slider .swiper-navigation {
+		right: 40px;
+	}
 }
 
 .projects-slider .button-prev,
 .projects-slider .button-next {
 	padding: 12px;
+	background-color: var(--cl-black);
+	border-radius: 50%;
 }
 
 .index-all-projects {
 	position: absolute;
-	top: 80px;
-	right: 80px;
+	bottom: 80px;
+	left: calc((100% - var(--container-width-lg)) / 2 + 12px);
+	display: flex;
 	z-index: 50;
 }
 
+@media(max-width: 1600px) {
+	.index-all-projects {
+		left: 100px;
+	}
+}
+
+@media(max-width: 1600px) {
+	.index-all-projects {
+		right: 40px;
+		top: 12px;
+		bottom: auto;
+		left: auto;
+	}
+}
+
 .index-all-projects a {
-	padding: 12px 24px;
+	padding: 4px;
 	text-decoration: none;
 	color: var(--cl-text);
-	border: 2px solid;
-	border-radius: 50px;
+	border-bottom: 2px solid;
 }
 
 .projects-slider__img {
@@ -72,6 +101,22 @@
 	background: linear-gradient(90deg, rgba(245,245,246,1) 0%, rgba(245,245,246,1) 25%, rgba(245,245,246,0) 50%);
 	background: linear-gradient(90deg, rgba(245,245,246,1) 0%, rgba(245,245,246,1) 25%, rgba(245,245,246,0.75) 35%, rgba(245,245,246,0) 50%);
 	z-index: 50;
+}
+
+@media(max-width: 1600px) {
+	.projects-slider .container {
+		padding-left: 100px;
+		background: linear-gradient(90deg, rgba(245,245,246,1) 0%, rgba(245,245,246,1) 25%, rgba(245,245,246,0.75) 50%, rgba(245,245,246,0) 75%);
+	}
+}
+
+@media(max-width: 600px) {
+	.projects-slider .container {
+		justify-content: start;
+		padding-top: 100px;
+		padding-left: 40px;
+		background: linear-gradient(135deg, rgba(245,245,246,1) 0%, rgba(245,245,246,1) 25%, rgba(245,245,246,0.75) 50%, rgba(245,245,246,0) 75%);
+	}
 }
 
 .projects-slider__info {
@@ -122,6 +167,19 @@
 	padding-left: var(--aside-offset);
 	grid-template-rows: 600px;
 	z-index: 50;
+}
+
+@media(max-width: 1600px) {
+	.index-project {
+		grid-template-rows: min-content;
+		padding-left: 80px;
+	}
+}
+
+@media(max-width: 600px) {
+	.index-project {
+		grid-template-rows: auto;
+	}
 }
 
 .index-project__info {
