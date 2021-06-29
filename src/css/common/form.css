@@ -62,4 +62,5 @@ textarea:focus {
 }
 
 button[type="submit"] {
+	background-color: var(--cl-orange-blood);
 }
