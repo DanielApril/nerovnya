@@ -60,7 +60,7 @@
 	}
 }
 
-@media(max-width: 1600px) {
+@media(max-width: 600px) {
 	.index-all-projects {
 		right: 40px;
 		top: 12px;
@@ -213,7 +213,8 @@
 }
 
 .index-project__tag:hover {
-	background: var(--cl-green);
+	background: var(--cl-orange-blood);
+	color: var(--cl-text-contrast);
 }
 
 .index-stage {

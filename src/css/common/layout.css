@@ -108,6 +108,14 @@ main {
 		grid-template-columns: 400px 1fr;
 		padding-left: 80px;
 	}
+	.grid-container._column {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.grid-container._column .section__title._shifted {
+		transform: none;
+	}
 }
 
 @media (max-width: 600px) {
@@ -197,6 +205,17 @@ main {
 	grid-column: 3/4;
 }
 
+@media(max-width: 1600px) {
+	.grid-container._reverse .grid-item._desc {
+		grid-column: 2/3;
+	}
+
+	.grid-container._reverse .grid-item._content {
+		grid-column: 1/2;
+		height: auto;
+	}
+}
+
 .icon {
 	display: flex;
 	width: 100%;
@@ -231,4 +250,8 @@ main {
 
 .social svg {
 	fill: var(--cl-text-alt);
+}
+
+.phone {
+	font-variant: lining-nums;
 }

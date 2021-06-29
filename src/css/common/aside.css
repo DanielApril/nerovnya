@@ -26,13 +26,9 @@
 	}
 }
 
-.aside:not(._active):hover {
-	/* transform: translateX( calc(-100% + 60px) ); */
-}
-
 .aside._active {
 	transform: translateX(0);
-	background-color: var(--cl-orange-blood);
+	background-color: var(--cl-grey-dark);
 }
 
 .aside:not(._active) .site-logo,
@@ -137,7 +133,19 @@
 
 .aside__bottom {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	padding-top: 40px;
 	width: 100%;
 	border-top: 1px solid var(--cl-beige-05);
+}
+
+.aside__botton-contacts {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 40px;
+}
+
+.aside__botton-contacts a {
+	text-decoration: none;
 }
