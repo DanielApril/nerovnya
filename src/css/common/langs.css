@@ -3,6 +3,12 @@
 	align-items: center;
 }
 
+@media(max-width: 600px) {
+	.site-langs {
+		transform: translateY(-4px);
+	}
+}
+
 .site-lang {
 	padding: 4px 8px;
 	text-transform: uppercase;

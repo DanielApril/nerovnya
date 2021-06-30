@@ -10,6 +10,12 @@
 	max-width: 720px;
 }
 
+@media(max-width: 600px) {
+	.form {
+		grid-template-columns: auto;
+	}
+}
+
 .form__primary,
 .form__secondary,
 .form__item {
@@ -18,8 +24,12 @@
 	width: 100%;
 }
 
+.form__item {
+	position: relative;
+}
+
 .form__item + .form__item {
-	margin-top: 20px;
+	margin-top: 36px;
 }
 
 .form__item._grow {
@@ -32,8 +42,15 @@ label + textarea {
 }
 
 label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: scale(1.1) translate(8px, 8px);
+	transition: transform .2s ease;
+	line-height: 1.2;
 	font-weight: 600;
 	font-size: 14px;
+	pointer-events: none;
 }
 
 textarea {
@@ -47,8 +64,11 @@ input,
 textarea {
 	padding: 8px 12px;
 	width: 100%;
-	border: 2px solid rgba(34, 43, 85, 0.08);
-	border-radius: 4px;
+	font-variant: lining-nums;
+	border: 0;
+	border-bottom: 2px solid rgba(34, 43, 85, 0.08);
+	border-radius: 0;
+	background: transparent;
 	outline: none;
 	transition: border .2s ease;
 }
@@ -57,10 +77,22 @@ input:active,
 input:focus,
 textarea:active,
 textarea:focus {
-	border: 2px solid var(--cl-black-05);
+	border-color: var(--cl-orange-blood);
 	outline: none;
 }
 
+input:hover + label,
+input:active + label,
+input:focus + label,
+input._filled + label,
+textarea:hover + label,
+textarea:active + label,
+textarea:focus + label,
+textarea._filled + label {
+	transform: scale(1) translate(0px, -20px);
+}
+
 button[type="submit"] {
+	border-color: var(--cl-orange-blood);
 	background-color: var(--cl-orange-blood);
 }

@@ -172,29 +172,25 @@
             <h2 class="section__title">Let's talks about your ideas!</h2>
           </div>
           <div class="grid-item _content feedback-form">
-            <form class="form" action="" name="form">
+            <form class="form" action="" name="form" autocomplete="on">
               <div class="form__primary">
                 <div class="form__item">
+                  <input class="field" id="input-name" name="input-name" type="text" required autocomplete="firstname">
                   <label for="input-name">Имя</label>
-                  <input id="input-name" name="input-name" type="text" placeholder="Иван" required>
                 </div>
                 <div class="form__item">
+                  <input class="field" id="input-email" name="input-email" type="email" required autocomplete="email">
                   <label for="input-email">Email</label>
-                  <input id="input-email" name="input-email" type="email" placeholder="1@2.ru" required>
                 </div>
                 <div class="form__item">
+                  <input class="field" id="input-phone" name="input-phone" type="tel" autocomplete="tel">
                   <label for="input-phone">Телефон</label>
-                  <input id="input-phone" name="input-phone" type="tel" placeholder="Телефон">
                 </div>
               </div>
               <div class="form__secondary">
                 <div class="form__item _grow">
+                  <textarea class="field" id="input-message" name="input-message" required></textarea>
                   <label for="input-message">Сообщение</label>
-                  <textarea id="input-message" name="input-message" placeholder="Сообщение" required></textarea>
-                </div>
-                <div class="form__item">
-                  <label for="input-file">Файлик</label>
-                  <input id="input-file" name="input-file" type="file" placeholder="Файлик">
                 </div>
               </div>
               <button class="button" type="submit" id="form-button">Отправить</button>

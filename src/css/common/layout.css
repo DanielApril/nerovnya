@@ -33,13 +33,13 @@ main {
 	padding: 100px 0;
 }
 
-@media (max-width: 1600px) {
+@media(max-width: 1600px) {
 	.section {
 		padding: 64px 0;
 	}
 }
 
-@media (max-width: 600px) {
+@media(max-width: 600px) {
 	.section {
 		padding: 40px 20px;
 	}
@@ -61,6 +61,17 @@ main {
 .section._contrast {
 	background: var(--cl-bg-contrast);
 	color: var(--cl-text-contrast);
+}
+
+
+@media(max-width: 600px) {
+	.section.first-section {
+		padding-top: 60px;
+	}
+}
+
+.section.first-section h1 {
+	text-transform: uppercase;
 }
 
 .section__title {
@@ -90,7 +101,13 @@ main {
 	padding: 0 20px;
 }
 
-@media (max-width: 600px) {
+@media(max-width: 1600px) {
+	.container {
+		padding-left: 80px;
+	}
+}
+
+@media(max-width: 600px) {
 	.container {
 		padding: 0;
 	}
@@ -103,7 +120,7 @@ main {
 	padding-left: var(--aside-offset);
 }
 
-@media (max-width: 1600px) {
+@media(max-width: 1600px) {
 	.grid-container {
 		grid-template-columns: 400px 1fr;
 		padding-left: 80px;
@@ -118,7 +135,7 @@ main {
 	}
 }
 
-@media (max-width: 600px) {
+@media(max-width: 600px) {
 	.grid-container {
 		padding: 0;
 	}
@@ -129,13 +146,13 @@ main {
 	margin-top: 120px;
 }
 
-@media (max-width: 1600px) {
+@media(max-width: 1600px) {
 	.grid-container + .grid-container{
 		margin-top: 60px;
 	}
 }
 
-@media (max-width: 600px) {
+@media(max-width: 600px) {
 	.grid-container + .grid-container{
 		margin-top: 20px;
 	}
@@ -145,7 +162,7 @@ main {
 	grid-template-columns: 1fr 1020px 400px 1fr;
 }
 
-@media (max-width: 1600px) {
+@media(max-width: 1600px) {
 	.grid-container._reverse {
 		grid-template-columns: 1fr 400px;
 		padding-left: var(--aside-offset);

@@ -1,21 +1,18 @@
-form.form(action="" name="form")
+form.form(action="" name="form" autocomplete="on")
 	.form__primary
 		.form__item
+			input(class="field" id="input-name" name="input-name" type="text" required autocomplete="firstname")
 			label(for="input-name") Имя
-			input(id="input-name" name="input-name" type="text" placeholder="Иван" required)
 		.form__item
+			input(class="field" id="input-email" name="input-email" type="email" required autocomplete="email")
 			label(for="input-email") Email
-			input(id="input-email" name="input-email" type="email" placeholder="1@2.ru" required)
 		.form__item
+			input(class="field" id="input-phone" name="input-phone" type="tel" autocomplete="tel" )
 			label(for="input-phone") Телефон
-			input(id="input-phone" name="input-phone" type="tel" placeholder="Телефон")
 
 	.form__secondary
 		.form__item._grow
+			textarea(class="field" id="input-message" name="input-message" required)
 			label(for="input-message") Сообщение
-			textarea(id="input-message" name="input-message" placeholder="Сообщение" required)
-		.form__item
-			label(for="input-file") Файлик
-			input(id="input-file" name="input-file" type="file" placeholder="Файлик")
 
 	button.button(type="submit" id="form-button") Отправить

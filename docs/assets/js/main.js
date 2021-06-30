@@ -3360,3 +3360,14 @@ function radioButtonGroup(buttonGroup) {
 		event.target.classList.add('is-checked');
 	});
 }
+
+var $fields = document.querySelectorAll('.field');
+Array.from($fields).forEach(function (field) {
+	field.addEventListener('change', function (event) {
+		if (field.value != '') {
+			field.classList.add('_filled');
+		} else {
+			field.classList.remove('_filled');
+		}
+	});
+});

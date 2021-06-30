@@ -126,3 +126,15 @@ function radioButtonGroup(buttonGroup) {
 		event.target.classList.add('is-checked');
 	});
 }
+
+
+let $fields = document.querySelectorAll('.field');
+Array.from($fields).forEach( (field) => {
+	field.addEventListener('change', (event) => {
+		if (field.value != '') {
+			field.classList.add('_filled');
+		} else {
+			field.classList.remove('_filled');
+		}
+	});
+})
