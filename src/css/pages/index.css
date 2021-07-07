@@ -180,9 +180,18 @@
 	}
 }
 
+@media(max-width: 1000px) {
+	.index-project {
+		padding-left: 0;
+	}
+}
+
 @media(max-width: 600px) {
 	.index-project {
-		grid-template-rows: auto;
+		display: flex;
+		height: 300px;
+		margin-right: -20px;
+		margin-left: -20px;
 	}
 }
 
@@ -190,6 +199,24 @@
 	padding: 24px 40px;
 	background-color: var(--cl-bg-alt);
 }
+
+@media(max-width: 1000px) {
+	.index-project__info {
+		padding: 16px 24px;
+		background-color: transparent;
+	}
+}
+
+@media(max-width: 600px) {
+	.index-project__info {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+		z-index: 10;
+	}
+}
+
 
 .index-project__type {
 	font-weight: 500;
@@ -221,9 +248,78 @@
 	color: var(--cl-text-contrast);
 }
 
+.index-project__img {
+	height: 100% !important;
+}
+
+@media(max-width: 600px) {
+	.index-project__img {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin-top: 0 !important;
+	}
+	.index-project__img::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,0.75) 50%, rgba(255,255,255,0) 75%);
+	}
+	.index-project__img img {
+		opacity: .5;
+	}
+}
+
 .index-stage {
 	grid-template-rows: 600px;
 	align-items: center;
+}
+
+@media(max-width: 1600px) {
+	.index-stage {
+		grid-template-rows: 500px;
+	}
+}
+
+@media(max-width: 1000px) {
+	.index-stage {
+		grid-template-rows: 400px;
+	}
+}
+
+@media(max-width: 600px) {
+	.index-stage {
+		position: relative;
+		display: flex;
+		margin-right: -20px;
+		margin-left: -20px;
+	}
+
+	.index-stage + .index-stage {
+		margin-top: 60px;
+	}
+
+	.index-stage__info {
+		padding: 16px 24px;
+		width: 100%;
+		background-color: rgba(255 255 255 / .3);
+		z-index: 10;
+	}
+
+	.index-stage__img {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 50%;
+		margin-top: 0 !important;
+		z-index: 5;
+	}
 }
 
 .index-stage__info {
@@ -252,7 +348,24 @@
 
 
 /* INDEX TEAM LIST */
-.index-team__desc {
+.index-about__info {
+	display: grid;
+	grid-gap: 40px;
+	justify-items: start;
+	align-items: start;
 	margin-top: 72px;
-	max-width: 300px;
+	padding-right: 40px;
+}
+
+@media(max-width: 1600px) {
+	.index-about__info {
+		grid-template-columns: minmax(300px, 1fr) min-content;
+		margin-bottom: 72px;
+	}
+}
+
+@media(max-width: 600px) {
+	.index-about__info {
+		grid-template-columns: auto;
+	}
 }

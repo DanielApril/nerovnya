@@ -86,7 +86,7 @@ block content
 					a.index-project__tag(href="/projects.html") #2020
 					a.index-project__tag(href="/projects.html") #villa
 			.index-project__img.grid-item._content
-				img._rounded(src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg")
+				img(src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg")
 
 		.index-project.grid-container._reverse
 			.index-project__info.grid-item._desc
@@ -96,28 +96,31 @@ block content
 					a.index-project__tag(href="/projects.html") #2020
 					a.index-project__tag(href="/projects.html") #villa
 			.index-project__img.grid-item._content
-				img._rounded(src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg")
+				img(src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg")
 
-	section.section.index-team._contrast
+	section.section.index-about._contrast
 		.grid-container._column
 			.grid-item._desc._shifted
 				h2.section__title Команда
-				p.index-team__desc We are a team of architects who have come together to turn our dreams and vision of beauty into real projects. Guided by our design philosophy, over the past 2 years Alex Nerovnya Architecture have developed more than 20 innovative projects of private villas, hotels, restaurants and resorts.
+				.index-about__info
+					p We are a team of architects who have come together to turn our dreams and vision of beauty into real projects. Guided by our design philosophy, over the past 2 years Alex Nerovnya Architecture have developed more than 20 innovative projects of private villas, hotels, restaurants and resorts.
+					a.button-link(href="/about.html")
+						| Explore
 			ul.team__list
 				li.team__item._alex
-					a.inner(href="/team.html")
+					.inner(href="/about.html")
 						.team__item-info
 							h3.team__item-name Александр
 							p.team__item-desc Перебирает Volvo
 						img.team__item-img(src="../../assets/img/team/alex.png")
 				li.team__item._sabina
-					a.inner(href="/team.html")
+					.inner(href="/about.html")
 						.team__item-info
 							h3.team__item-name Сабина
 							p.team__item-desc Ругает Саню
 						img.team__item-img(src="../../assets/img/team/sabina.png")
 				li.team__item._andrew
-					a.inner(href="/team.html")
+					.inner(href="/about.html")
 						.team__item-info
 							h3.team__item-name Андрей
 							p.team__item-desc Коронит
@@ -138,7 +141,7 @@ block content
 					.icon
 						include ../../img/icons/arrow-right.svg
 			.grid-item._content.index-stage__img
-				img._rounded(src="../../assets/img/projects/yukon-house/YUKON-house-4.jpg")
+				img(src="../../assets/img/projects/yukon-house/YUKON-house-4.jpg")
 
 		.grid-container.index-stage._reverse
 			.index-stage__info.grid-item._desc
@@ -151,7 +154,7 @@ block content
 					.icon
 						include ../../img/icons/arrow-right.svg
 			.grid-item._content.index-stage__img
-				img._rounded(src="../../assets/img/projects/yukon-house/YUKON-house-5.jpg")
+				img(src="../../assets/img/projects/yukon-house/YUKON-house-5.jpg")
 
 		.grid-container.index-stage
 			.index-stage__info.grid-item._desc
@@ -164,7 +167,7 @@ block content
 					.icon
 						include ../../img/icons/arrow-right.svg
 			.grid-item._content.index-stage__img
-				img._rounded(src="../../assets/img/projects/yukon-house/YUKON-house-6.jpg")
+				img(src="../../assets/img/projects/yukon-house/YUKON-house-6.jpg")
 
 
 	section.section.feedback._contrast
