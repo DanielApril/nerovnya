@@ -4,9 +4,9 @@
 	bottom: 0;
 	left: 0;
 	display: grid;
-	grid-template-rows: auto 1fr auto;
+	grid-template-rows: min-content 1fr min-content;
 	justify-items: start;
-	padding: 40px 50px;
+	padding: 40px 50px 0;
 	width: 80%;
 	background-color: var(--cl-bg-alt);
 	box-shadow: 0 0 8px -4px var(--cl-black);
@@ -29,6 +29,8 @@
 .aside._active {
 	transform: translateX(0);
 	background-color: var(--cl-grey-dark);
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 .aside:not(._active) .site-logo,
@@ -76,6 +78,7 @@
 
 .aside .site-menu {
 	align-self: center;
+	padding: 60px 0;
 }
 
 .open-menu,
@@ -135,7 +138,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 40px;
+	padding: 40px 0;
 	width: 100%;
 	border-top: 1px solid var(--cl-beige-05);
 }
