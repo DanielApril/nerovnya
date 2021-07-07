@@ -19,27 +19,9 @@
 	overflow: hidden;
 }
 
-.team__item::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	opacity: .7;
-	background: var(--cl-black);
-	pointer-events: none;
-	transition: all .3s ease-in-out;
-	z-index: 15;
-}
-
 .team__item:hover .team__item-info {
 	transform: translateY(0);
 	opacity: 1;
-}
-
-.team__item:hover::after {
-	opacity: 0;
 }
 
 .team__item .inner {
@@ -58,6 +40,7 @@
 
 .team__item-info {
 	position: absolute;
+	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -66,7 +49,7 @@
 	color: var(--cl-text-contrast);
 	background: var(--cl-black-075);
 	opacity: 0;
-	transform: translateY(20%);
+	transform: translateY(20px);
 	transition: all .3s ease-in-out;
 	z-index: 20;
 }

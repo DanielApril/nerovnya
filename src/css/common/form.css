@@ -48,7 +48,7 @@ label {
 	transform: scale(1.1) translate(8px, 8px);
 	transition: transform .2s ease;
 	line-height: 1.2;
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 14px;
 	pointer-events: none;
 }
@@ -66,11 +66,12 @@ textarea {
 	width: 100%;
 	font-variant: lining-nums;
 	border: 0;
-	border-bottom: 2px solid rgba(34, 43, 85, 0.08);
+	border-bottom: 1px solid var(--cl-bg-alt);
 	border-radius: 0;
 	background: transparent;
 	outline: none;
 	transition: border .2s ease;
+	color: var(--cl-text-contrast);
 }
 
 input:active,

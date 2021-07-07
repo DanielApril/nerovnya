@@ -161,6 +161,10 @@
 	transform: translateX(0px);
 }
 
+
+
+/* INDEX PROJECT LIST */
+
 .index-project {
 	position: relative;
 	align-items: center;
@@ -244,4 +248,11 @@
 
 .index-stage__link {
 	margin-top: 80px;
+}
+
+
+/* INDEX TEAM LIST */
+.index-team__desc {
+	margin-top: 72px;
+	max-width: 300px;
 }

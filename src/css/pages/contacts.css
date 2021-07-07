@@ -7,10 +7,6 @@
 	gap: 20px
 }
 
-.page-contacts .feedback-form {
-	margin-top: 100px;
-}
-
 .contacts__phone {
 	display: grid;
 	grid-template-columns: min-content min-content auto;

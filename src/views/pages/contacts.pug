@@ -6,9 +6,9 @@ block vars
 	- var descPage = "Архитектор"
 
 block content
-	section.section.first-section._cover
+	section.section.first-section
 		.container
-			h1 Let's talk about your ideas!
+			h1 We are closer then you think
 			p Please contact our team via email, whatsapp, telegram or&nbsp;on&nbsp;social media, and we&nbsp;will be&nbsp;glad to&nbsp;discuss your idea for an&nbsp;architectural project of&nbsp;any scale, purpose and geographical location.
 
 			.contacts
@@ -25,5 +25,9 @@ block content
 						include ../includes/elements/instagram
 						include ../includes/elements/behance
 
-				.feedback-form
-					include ../includes/components/form
+	section.section.feedback._contrast
+		.grid-container
+			.grid-item._desc
+				h2.section__title Let's talks about your ideas!
+			.grid-item._content.feedback-form
+				include ../includes/components/form
