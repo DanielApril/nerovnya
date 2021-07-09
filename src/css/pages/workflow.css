@@ -4,6 +4,16 @@
 	font-variant: lining-nums;
 }
 
+@media(max-width: 1000px) {
+	.workflow .grid-container {
+		grid-template-columns: 1fr;
+		grid-gap: 40px;
+	}
+	.workflow .grid-item._content {
+		grid-column: 1/2;
+	}
+}
+
 .stage__name {
 	display: flex;
 	flex-direction: column;

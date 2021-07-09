@@ -17,6 +17,10 @@
 	.grid-item._content.projects-list {
 		grid-column: 1/2;
 	}
+
+	.grid-item._content.projects-list {
+		margin-top: 0;
+	}
 }
 
 .projects-list .inner {
