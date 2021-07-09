@@ -1,12 +1,23 @@
+.section.feedback-short .icon svg {
+	fill: var(--cl-text-contrast);
+}
+
 @media(max-width: 1000px) {
-	.section.feedback .grid-container {
+	.section.feedback .grid-container,
+	.section.feedback-short .grid-container {
 		grid-template-columns: auto;
 		grid-template-rows: min-content min-content;
 	}
 
-	.section.feedback .grid-item._content {
+	.section.feedback .grid-item._content,
+	.section.feedback-short .grid-item._content {
 		grid-column: 1/2;
+	}
+	.section.feedback .grid-item._content {
 		margin-top: 72px;
+	}
+	.section.feedback-short .grid-item._content {
+		margin-top: 32px;
 	}
 }
 

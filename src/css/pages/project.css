@@ -109,3 +109,22 @@
 	margin: 1rem 0 0;
 	font-style: italic;
 }
+
+.project-hero__next {
+	margin-bottom: 100px;
+}
+
+.project-hero__link {
+	margin-top: 60px;
+}
+
+@media(max-width: 600px) {
+	.project-hero__next {
+		margin-bottom: 60px;
+	}
+
+	.project-hero__link {
+		margin-top: 40px;
+		background-color: var(--cl-bg-alt);
+	}
+}

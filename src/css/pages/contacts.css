@@ -12,7 +12,7 @@
 	grid-template-columns: min-content min-content auto;
 	grid-gap: 8px;
 	align-items: center;
-	margin: 24px 0 12px;
+	margin: 0 0 12px;
 	font-size: 20px;
 }
 

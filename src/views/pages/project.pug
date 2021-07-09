@@ -17,7 +17,7 @@ block content
 					span.project__tag #villa
 
 		.project-hero__img
-			img(src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg")
+			img(src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg" loading="lazy")
 
 	section.section.project__desc._primary
 		.grid-container._column
@@ -39,13 +39,46 @@ block content
 	section.section
 		.container
 			figure.project__img
-				img(src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg" alt="" title="" data-fancybox="gallery" data-src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg" data-caption="Title 1")
+				img(src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg" alt="" title="" data-fancybox="gallery" data-src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg" data-caption="Title 1" loading="lazy")
 				figcaption.project__img-title Title 1
 
 			figure.project__img
-				img(src="../../assets/img/projects/sky-house/SKY-house-1.jpg" alt="" title="" data-fancybox="gallery" data-src="../../assets/img/projects/sky-house/SKY-house-1.jpg" data-caption="Title 1")
+				img(src="../../assets/img/projects/sky-house/SKY-house-1.jpg" alt="" title="" data-fancybox="gallery" data-src="../../assets/img/projects/sky-house/SKY-house-1.jpg" data-caption="Title 1" loading="lazy")
 				figcaption.project__img-title Title 2
 
 			figure.project__img
-				img(src="../../assets/img/projects/sky-house/SKY-house-2.jpg" alt="" title="" data-fancybox="gallery" data-src="../../assets/img/projects/sky-house/SKY-house-2.jpg" data-caption="Title 1")
+				img(src="../../assets/img/projects/sky-house/SKY-house-2.jpg" alt="" title="" data-fancybox="gallery" data-src="../../assets/img/projects/sky-house/SKY-house-2.jpg" data-caption="Title 1" loading="lazy")
 				figcaption.project__img-title Title 3
+
+	section.section.feedback._contrast
+		.grid-container
+			.grid-item._desc
+				h2.section__title Let's talks about your ideas!
+			.grid-item._content.feedback-form
+				include ../includes/components/form
+
+	section.section.feedback-short._contrast
+		.grid-container
+			.grid-item._desc
+				h2.section__title Or just contact us via
+			.grid-item._content
+				.contacts__phone
+					include ../includes/elements/whatsapp
+					include ../includes/elements/telegram
+					a.phone(href="tel:+79150991886") +7 (915) 099-18-86
+				div
+					a.email(href="mailto:alex_nerovnya@mail.ru") alex_nerovnya@mail.ru
+
+	section.section.project-hero._cover._center
+		.container
+			.project-hero__info
+				h3.project-hero__next Next project
+				span.project-hero__type Villa
+				h1.project-hero__name.section__title Abu Dhabi Villa Complex
+				a.project-hero__link.button-link(href="/project.html")
+					| Explore
+					.icon
+						include ../../img/icons/arrow-right.svg
+
+		.project-hero__img
+			img(src="../../assets/img/projects/sky-house/SKY-house-1-halved.jpg" loading="lazy")
