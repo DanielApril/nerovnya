@@ -94,7 +94,7 @@ p {
 	margin: 0;
 }
 
-article p + p {
+.article p + p {
 	margin-top: .75em;
 }
 

@@ -98,7 +98,7 @@ main {
 	}
 }
 
-.section__title + article {
+.section__title + .article {
 	margin-top: 3rem;
 }
 

@@ -11,7 +11,6 @@
 .page-index .first-section {
 	position: relative;
 }
-
 .page-index .projects-slider {
 	position: absolute;
 	top: 0;
@@ -111,7 +110,7 @@
 
 @media(max-width: 1600px) {
 	.projects-slider .container {
-		padding-left: 100px;
+		padding-left: 140px;
 		background: linear-gradient(90deg, rgba(245,245,246,1) 0%, rgba(245,245,246,1) 25%, rgba(245,245,246,0.75) 50%, rgba(245,245,246,0) 75%);
 	}
 }
